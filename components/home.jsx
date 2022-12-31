@@ -150,7 +150,7 @@ export default function HomeComponent() {
 
               <section className="mt-16 pt-16 " aria-labelledby="location-heading">
 
-                <div className="border-b p-16 border-gray-200 pb-5">
+                <div className="border-b p-8 border-gray-200 pb-5">
                   <h3 className="text-center text-2xl font-bold text-warm-gray-900 sm:text-3xl sm:tracking-tight">
                     INVESTMENT OPPORTUNITIES
 
