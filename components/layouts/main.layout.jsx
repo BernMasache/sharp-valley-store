@@ -42,7 +42,7 @@ export default function MainLayout({ children }) {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
 
-    
+
     return (
         <div className="bg-gray-50">
             <div className='sticky top-0 z-30'>
@@ -112,9 +112,9 @@ export default function MainLayout({ children }) {
                                                                 <ul role="list" aria-labelledby="mobile-categories-heading" className="mt-6 space-y-6">
                                                                     {category.categories.map((item) => (
                                                                         <li key={item.name} className="flex">
-                                                                            <a href={item.href} className="font-medium text-gray-500 hover:text-gray-700">
+                                                                            <Link href={item.href} className="font-medium text-gray-500 hover:text-gray-700">
                                                                                 {item.name}
-                                                                            </a>
+                                                                            </Link>
                                                                         </li>
                                                                     ))}
                                                                 </ul>
@@ -131,7 +131,7 @@ export default function MainLayout({ children }) {
                                         {/* Currency selector */}
                                         <form>
                                             <div className="inline-block">
-                                                
+
                                                 <div className="group relative -ml-2 rounded-md border-transparent focus-within:ring-2 focus-within:ring-white">
                                                     <h1 className='text-white'>
                                                         Sharp Valley
@@ -167,12 +167,12 @@ export default function MainLayout({ children }) {
                                     </div>
                                 </form>
 
-                                
+
                                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                                    
+
                                     <span className="h-6 w-px bg-gray-600" aria-hidden="true" />
                                     <a href="#" className="text-sm font-medium text-white hover:text-gray-100">
-                                        {['Jan', 'Feb', 'March', 'April', 'May', 'Jun', 'July','Aug','Sep','Oct','Nov','Dec'][new Date().getMonth()]} {new Date().getDay()}, {new Date().getFullYear()}
+                                        {['Jan', 'Feb', 'March', 'April', 'May', 'Jun', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][new Date().getMonth()]} {new Date().getDay()}, {new Date().getFullYear()}
                                     </a>
                                 </div>
                             </div>
@@ -193,6 +193,35 @@ export default function MainLayout({ children }) {
                                                     alt=""
                                                 />
                                             </a>
+                                        </div>
+                                        {/* Mobile menu and search (lg-) */}
+                                        <div className="flex flex-1 items-center lg:hidden">
+                                            <button
+                                                type="button"
+                                                className="-ml-2 rounded-md bg-white p-2 text-gray-400"
+                                                onClick={() => setMobileMenuOpen(true)}
+                                            >
+                                                <span className="sr-only">Open menu</span>
+                                                <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                                            </button>
+
+                                        </div>
+
+                                        {/* Logo (lg-) */}
+                                        <a href="#" className="lg:hidden">
+                                            <span className="sr-only">Sharp Valley</span>
+                                            <img
+                                                src="./assets/images/cropped-Sharp-Valley-2.png"
+                                                alt=""
+                                                className="h-8 w-auto"
+                                            />
+                                        </a>
+
+                                        <div className="flex flex-1 items-center justify-end">
+                                            <div className="flex items-center lg:ml-8">
+
+
+                                            </div>
                                         </div>
 
                                         <div className="hidden h-full lg:flex">
