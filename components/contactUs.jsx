@@ -156,10 +156,7 @@ export default function ContactUs() {
                 </svg>
               </div>
               <h3 className="text-lg font-medium text-white">Contact information</h3>
-              <p className="mt-6 max-w-3xl text-base text-indigo-50">
-                Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor
-                lacus arcu.
-              </p>
+             
               <dl className="mt-8 space-y-6">
                 <dt>
                   <span className="sr-only">Phone number</span>
