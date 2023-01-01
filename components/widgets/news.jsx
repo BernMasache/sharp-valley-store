@@ -54,8 +54,8 @@ export default function NewsPage() {
         </div>
       </div>
       <div className="relative mx-auto max-w-7xl py-24 px-6 sm:py-32 lg:px-8 lg:py-40">
-        <svg
-          className="absolute top-0 left-full -translate-x-1/2 -translate-y-3/4 transform lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4 sm:sr-only"
+        {/* <svg
+          className="absolute top-0 left-full -translate-x-1/2 -translate-y-3/4 transform lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4"
           width={404}
           height={784}
           fill="none"
@@ -75,7 +75,7 @@ export default function NewsPage() {
             </pattern>
           </defs>
           <rect width={404} height={784} fill="url(#8b1b5f72-e944-4457-af67-0c6d15a99f38)" />
-        </svg>
+        </svg> */}
 
         <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-12 xl:gap-x-16">
           <div className="lg:col-span-1">
