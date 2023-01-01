@@ -1,33 +1,71 @@
 import React, { useState, useEffect } from 'react';
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
-import axios from 'axios';
-export default function ContactUs() {
+import useEmailStore from '../services/store/email.store';
+import Swal from 'sweetalert2';
+import LoadingWidget from './widgets/LoadingWidget';
+const emailStore = new useEmailStore()
 
-  const [values, setValues] = useState({
-    email: '',
-    subject: '',
-    message: '',
-  });
+export default function ContactUs() {
+  const [loading, setIsLoading] = useState(false);
+
+  const [email, setEmailValues] = useState("");
+
+  const [message, setMessageValues] = useState("");
+  const [subject, setSubjectValues] = useState("");
+  const [fullname, setFullnameValues] = useState("");
 
   const getEmailDetails = (e) => {
-    setValues({
-      [e.target.name]: e.target.value
-    })
+    setEmailValues(e.target.value)
   }
 
+  const getMessageDetails = (e) => {
+    setMessageValues(e.target.value)
+  }
+
+  const getSubjectDetails = (e) => {
+    setSubjectValues(e.target.value)
+  }
+
+  const getFullnameDetails = (e) => {
+    setFullnameValues(e.target.value)
+  }
+
+
   const sendEmailFunction = (e) => {
+    setIsLoading(!loading)
+
     e.preventDefault()
-    
-    // const res = axios.post('/api/sendmail',{
-    //     email: email,
-    //     subject: subject,
-    //     message: message,
-      
-    // });
-    
+    let data = {
+      email: email,
+      subject: subject,
+      message: message,
+      fullname: fullname
+    }
+
+    emailStore.sendEmail(data).then(res => {
+      setIsLoading(false)
+
+      Swal.fire({
+        timer: 4000,
+        text: res.message,
+        position: "center",
+        showConfirmButton: true,
+      })
+
+    }).catch(err => {
+      Swal.fire({
+        icon: "error",
+        title: 'Error',
+        text: err,
+        position: "center",
+        showConfirmButton: false,
+      })
+    })
+
   }
   return (
     <div className="bg-gray-100">
+      <LoadingWidget loading={loading} />
       <div className="bg-white relative sm:pb-32 py-2 lg:py-2">
 
         <div className="relative">
@@ -156,7 +194,7 @@ export default function ContactUs() {
                 </svg>
               </div>
               <h3 className="text-lg font-medium text-white">Contact information</h3>
-             
+
               <dl className="mt-8 space-y-6">
                 <dt>
                   <span className="sr-only">Phone number</span>
@@ -244,11 +282,10 @@ export default function ContactUs() {
                   </label>
                   <div className="mt-1">
                     <input
-                      onChange={getEmailDetails}
+                      onChange={getFullnameDetails}
                       required
                       type="text"
                       name="fullname"
-                      id="firstname"
                       autoComplete="given-name"
                       className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     />
@@ -263,7 +300,6 @@ export default function ContactUs() {
                     <input
                       onChange={getEmailDetails}
                       required
-                      id="email"
                       name="email"
                       type="email"
                       autoComplete="email"
@@ -277,11 +313,10 @@ export default function ContactUs() {
                   </label>
                   <div className="mt-1">
                     <input
-                      onChange={getEmailDetails}
+                      onChange={getSubjectDetails}
                       required
                       type="text"
                       name="subject"
-                      id="subject"
                       className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     />
                   </div>
@@ -297,8 +332,7 @@ export default function ContactUs() {
                   </div>
                   <div className="mt-1">
                     <textarea
-                      onChange={getEmailDetails}
-                      id="message"
+                      onChange={getMessageDetails}
                       name="message"
                       rows={4}
                       required

@@ -1,4 +1,4 @@
-import axios from 'axios';
+
 import nodemailer from "nodemailer"
 // const nodemailer = require('nodemailer');
 
