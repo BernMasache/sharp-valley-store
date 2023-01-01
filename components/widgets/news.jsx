@@ -72,7 +72,7 @@ export default function NewsPage() {
           <div className="lg:col-span-2 mb-8">
             <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">News Section</h2>
           </div>
-          <dl className="mt-8 grid grid-cols-2 gap-16 sm:grid-cols-1 sm:gap-x-4 lg:col-span-12 lg:mt-0">
+          <dl className="mt-8 grid grid-cols-1 gap-16 sm:grid-cols-1 sm:gap-x-4 lg:col-span-12 lg:mt-0">
             {features.map((news) => (
               <div key={news.name}>
               
