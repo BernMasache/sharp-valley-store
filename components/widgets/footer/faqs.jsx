@@ -127,7 +127,7 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function FAQsWidget() {
+export default function FAQsWidget(props) {
     return (
         <div className="bg-gray-50">
             
@@ -168,7 +168,28 @@ export default function FAQsWidget() {
                     <section className='mt-4'>
                         <dl className="mt-6 space-y-6 divide-y divide-gray-200">
                             <h1 className='w-full bg-gray-300 p-4'>{faqs.investors.title}</h1>
-                            {faqs.investors.questions.slice(0, 2).map((faq) => (
+                            {props.limit==0? faqs.investors.questions.map((faq) => (
+                                <Disclosure as="div" key={faq.question} className="pt-6">
+                                    {({ open }) => (
+                                        <>
+                                            <dt className="text-lg">
+                                                <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-400">
+                                                    <span className="font-medium text-gray-900">{faq.question}</span>
+                                                    <span className="ml-6 flex h-7 items-center">
+                                                        <ChevronDownIcon
+                                                            className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
+                                                            aria-hidden="true"
+                                                        />
+                                                    </span>
+                                                </Disclosure.Button>
+                                            </dt>
+                                            <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                                                <p className="text-base text-gray-500">{faq.answer}</p>
+                                            </Disclosure.Panel>
+                                        </>
+                                    )}
+                                </Disclosure>
+                            )):faqs.investors.questions.slice(0, props.limit).map((faq) => (
                                 <Disclosure as="div" key={faq.question} className="pt-6">
                                     {({ open }) => (
                                         <>

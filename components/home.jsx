@@ -172,7 +172,7 @@ export default function HomeComponent() {
         {/* FAQ */}
         <div className="bg-warm-gray-50">
           <div className="mx-auto max-w-md py-8 px-4 sm:max-w-3xl sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
-            <FAQsWidget />
+            <FAQsWidget limit={2}/>
           </div>
         </div>
 
