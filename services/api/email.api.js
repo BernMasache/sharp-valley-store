@@ -1,5 +1,6 @@
 import axios from 'axios';
-const resource = process.env.PORT+"/api"|| process.env.NEXT_PUBLIC_API + "/api";
+const resource = process.env.NEXT_PUBLIC_API + "/api";
+
 
 export default class EmailService {
 
