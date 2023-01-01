@@ -75,7 +75,6 @@ export default function HomeComponent() {
         text: 'Successfully subscribed to our news letter',
         position:"center",
         showConfirmButton:false,
-        width:"2rem"
       })
 
     } catch (e) {
@@ -85,8 +84,6 @@ export default function HomeComponent() {
         text: 'Failed to subscribed to our news letter, check your email or network connection',
         position:"center",
         showConfirmButton:false,
-        width:"22rem"
-        
       })
 
       setErrorMsg("Error occured: Check your email or network connection")
