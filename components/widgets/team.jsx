@@ -8,15 +8,7 @@ const people = [
     linkedinUrl: 'https://www.linkedin.com',
     description: "is the CEO and Founder of Sharp Valley Holdings, a privately owned company head quartered in Texas, U.S.A. with interests in real estate development, investing brokerage, sales and marketing, and property management. He also works as a due diligence consultant assisting subject matter experts secure funding for their projects. Michael earned a BSc. Degree in Finance & Real Estate and is currently pursuing a Masters degree in Operations Management. He is a member of the Association of Chartered Certified Accountants (ACCA) U.S.A., and a board member in various organizations including RECAPS Solar, TICC Financials, Malawians in Texas Organization, and Brentwood Homeowners Association."
   },
-  {
-    name: 'David Salako ',
-    role: 'CEO Malawi',
-    imageUrl:
-      './assets/images/team/2.jpg',
-    twitterUrl: '',
-    linkedinUrl: 'https://www.linkedin.com/in/davidsalako/',
-    description: "joined Sharp Valley in December 2018 and is an innovative data strategist & analytics expert spearheading the development of innovative and advanced analytics-based solutions—to move businesses forward and increase shareholder and customer value. Proficient in developing strategies and tools to gather and explore data—using quantitative analytics, and applying statistical rigor across large datasets to identify intelligence and insights. Comfortable with highly sensitive and private data—in niche and start-up environments with limited resources and budget. He has 2 decades plus of work experience developing quality improvement and business intelligence solutions for financial organizations. \nIn the last decade, he has done the same for healthcare institutions. Bridging the cultural divide between project stakeholders and technologists, developing predictive models and providing actionable results is his calling and what he finds challenging and rewarding.\nDavid’s formal graduate level education in epidemiology, biomedical informatics, software development, and financial accounting serves him well. He is able to synthesize complex organizational requirements and diverse industrial concepts, in an agile way.\nAn international background, perspective and drive have afforded David the opportunity to live and work in North America, Northern Europe, and Africa.\nSince 2012, serving in a volunteer capacity, David is on the board of directors of Good Steward Global Initiative, a non-profit organization that establishes libraries in “book famined” areas of rural Northern Malawi. Their low cost approach involves new and gently used books donated and curated in the United States, then shipped to East and Central Africa to be sorted, organized, and libraries established by even more locally based volunteers.\nIn his spare time he likes to spend time listening to worldwide music, reading books, and playing games with his two young boys, the 7 year old is an expert on LEGO bricks and dinosaurs and the 5 year old, a remote controlled cars enthusiast. David also tries to write songs in his spare time and enjoys continuously learning about and travelling the world."
-  },
+ 
   {
     name: 'Gloria Mbendera',
     role: 'Legal Counsel',

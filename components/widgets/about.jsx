@@ -66,12 +66,23 @@ function AboutPage(props) {
                                 </h3>
                                 <p className="text-lg text-gray-600 mt-2">
 
-                                    Sharp Valley has interests in real estate development, investing brokerage, sales and marketing, hotel collection and property management.
+                                    Sharp Valley, is a registered limited
+                                    liability corporation with head offices in Lilongwe, Malawi. Sharp Valley has been established
+                                    as the leading service provider of Project Management and Procurement Solutions, eCommerce,
+                                    and logistics and advisory services to our clients worldwide. With our seven years of experience
+                                    managing large projects and procurement in logistics, heavy equipment storage, and other supply
+                                    chain nodes, Sharp Valley has helped many of our clients and partners navigate their difficult
+                                    and challenging projects especially experienced in the last few years under the global pandemic
+                                    conditions. Our staff has a combined 35 years of experience managing projects of strategic
+                                    significance for our clients.
+                                </p>
 
-                                    Our business model is accredited as one of the most innovative business ideas to hit the market in southern Africa. Home ownership is becoming a reality to many middle-class households, building wealth and moving up the economic ladder.
-
-                                    Our leading product is Value Added plots which have been transformed and made suitable for immediate settlement and futuristic capital gain.
-
+                                <p className="text-lg text-gray-600 mt-8">
+                                    Sharp Valley is now serving clients with extensive diversity, both by regional footprint
+                                    and industry. Our clients span healthcare, pharmaceuticals, military, government, oil and gas,
+                                    and food and beverage industries in North America, Asia, Africa, Europe, and the Middle East.
+                                    The company brings to bear its extensive network of partners, expertise, experience, diligence,
+                                    and professionalism to deliver the most reliable and highest quality products and services.
                                 </p>
                             </div>
                         </section>
@@ -88,34 +99,7 @@ function AboutPage(props) {
                             </div>
                         </section>
 
-                        <section className="mt-2 pt-2 " aria-labelledby="location-heading">
-                            <div className="pb-2">
-                                <h3 className="text-start text-2xl font-bold text-warm-gray-900 sm:text-3xl sm:tracking-tight">
-                                    Our Expertise
-                                </h3>
-                                <div className="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5">
-                                    <dt className="text-sm font-medium text-gray-500">We have extensive experience in:</dt>
-                                    <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
-
-                                        <ul role="list" className="divide-y divide-gray-200 rounded-md border border-gray-200">
-
-                                            {skills.map((skill, key) => (
-                                                <li key={key} className="flex items-center justify-between py-3 pl-3 pr-4 text-sm">
-                                                    <div className="flex w-0 flex-1 items-center">
-                                                        <CreditCardIcon className="h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
-                                                        <span className="ml-2 w-0 flex-1 truncate">{skill.skill}</span>
-                                                    </div>
-
-                                                </li>
-                                            ))}
-
-                                        </ul>
-                                    </dd>
-                                </div>
-
-
-                            </div>
-                        </section>
+                        
                     </div>
                 </div>
             </div>

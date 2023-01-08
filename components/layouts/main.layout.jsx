@@ -6,13 +6,13 @@ import Link from 'next/link'
 const navigation = {
     mainNave: [
         { name: 'Home', href: '/home' },
-        { name: 'Management Team', href: 'management-team' },
-        { name: 'Projects', href: '/projects' },
-        { name: 'Quality Used Equipment', href: '/quality-used-equipment' },
-        { name: 'About', href: '/about' },
+        { name: 'Management Team', href: '/management-team' },
+        { name: 'Partners', href: '/partners' },
+        { name: 'Project Management', href: '/projects' },
+        { name: 'Procurement', href: '/quality-used-equipment' },
+        { name: 'About Us', href: '/about' },
         { name: 'Contact Us', href: '/contact-us' },
         { name: 'News', href: '/news' },
-        { name: 'FAQs', href: '/frequently-asked-questions' },
     ],
 
     categories: [
@@ -20,13 +20,12 @@ const navigation = {
             name: 'Sharp Valley',
             categories: [
                 { name: 'Home', href: '/home' },
-                { name: 'Management Team', href: 'management-team' },
-                { name: 'Projects', href: '/projects' },
-                { name: 'Quality Used Equipment', href: '/quality-used-equipment' },
-                { name: 'About', href: '/about' },
+                { name: 'Management Team', href: '/management-team' },
+                { name: 'Project MAnagement', href: '/projects' },
+                { name: 'Procurement', href: '/quality-used-equipment' },
+                { name: 'About Us', href: '/about' },
                 { name: 'Contact Us', href: '/contact-us' },
                 { name: 'News', href: '/news' },
-                { name: 'FAQs', href: '/frequently-asked-questions' },
             ]
         },
 

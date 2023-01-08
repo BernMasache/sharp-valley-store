@@ -59,7 +59,7 @@ export default function EquipmentsUsed() {
                             </div>
                             <div className="relative lg:col-span-1">
 
-                                <h2 className="text-3xl text-gray-700 font-bold tracking-tight sm:text-4xl">Quality Used Equipments</h2>
+                                <h2 className="text-3xl text-gray-700 font-bold tracking-tight sm:text-4xl">Procurement</h2>
                                 <blockquote className="mt-6 text-white">
                                     <p className="text-xl text-white font-medium sm:text-2xl">
                                         Building is about getting around the obstacles that are presented to you.

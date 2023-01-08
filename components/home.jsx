@@ -8,6 +8,7 @@ import Processes from './widgets/footer/ourProcesses'
 import FAQsWidget from './widgets/footer/faqs'
 import axios from 'axios'
 import Swal from 'sweetalert2'
+import HomeCarouselComponent from './widgets/homeCarousel'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -53,7 +54,7 @@ export default function HomeComponent() {
   const [state, setState] = useState('idle')
   const [errorMsg, setErrorMsg] = useState(null)
 
-  const getEmail = (e)=>{
+  const getEmail = (e) => {
 
     setEmail(e.target.value)
 
@@ -65,25 +66,25 @@ export default function HomeComponent() {
     try {
 
       const response = await axios.post('/api/subscribe', { email })
-     
+
       setState('Success')
       setEmail('')
 
       Swal.fire({
-        icon:"success",
+        icon: "success",
         title: 'Subscribed!',
         text: 'Successfully subscribed to our news letter',
-        position:"center",
-        showConfirmButton:false,
+        position: "center",
+        showConfirmButton: false,
       })
 
     } catch (e) {
       Swal.fire({
-        icon:"error",
+        icon: "error",
         title: 'Failed!',
         text: 'Failed to subscribed to our news letter, check your email or network connection',
-        position:"center",
-        showConfirmButton:false,
+        position: "center",
+        showConfirmButton: false,
       })
 
       setErrorMsg("Error occured: Check your email or network connection")
@@ -95,54 +96,16 @@ export default function HomeComponent() {
   return (
     <div className={styles.main}>
 
-      <div className="bg-white relative sm:pb-32 py-2 lg:py-2">
-
-        <div className="relative overflow-hidden bg-sky-300 py-4 px-8 shadow-2xl lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-16">
-          <div className="absolute inset-0 opacity-50 mix-blend-multiply saturate-0 filter">
-            <img
-              src="./assets/images/Slide-Show-3-.jpg"
-              alt=""
-              className="h-full w-full object-cover"
-            />
-          </div>
-          <div className="relative lg:col-span-1">
-            <div className="p-4">
-              <h1 className='text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl'>
-                WHAT WE DO
-              </h1>
-            </div>
-            <blockquote className="mt-6 text-white">
-              <div className="">
-                <p className="text-sm font-normal sm:text-2xl">
-                  Sharp Valley has interests in real estate development, investing brokerage, sales and marketing, hotel collection and property management.
-
-                </p>
-
-              </div>
-              <p className="text-sm font-normal sm:text-2xl">
-
-                Our business model is accredited as one of the most innovative business ideas to hit the market in southern Africa.
-                Home ownership is becoming a reality to many middle-class households, building wealth and moving up the economic ladder.
-              </p>
-
-            </blockquote>
-          </div>
-        </div>
-
-
-      </div>
+      <HomeCarouselComponent/>
       <main>
 
         <div className="bg-white">
           {/* className="mx-auto max-w-md py-2 px-4 sm:max-w-3xl sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8" */}
           <div>
             <div className="divide-y">
+
               <section aria-labelledby="location-heading">
                 <Processes />
-              </section>
-
-              <section className='mt-4'>
-                <AllCompounds />
               </section>
 
               <section className="mt-16 pt-16 " aria-labelledby="location-heading">
@@ -167,11 +130,11 @@ export default function HomeComponent() {
         </div>
 
         {/* FAQ */}
-        <div className="bg-warm-gray-50">
+        {/* <div className="bg-warm-gray-50">
           <div className="mx-auto max-w-md py-8 px-4 sm:max-w-3xl sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
-            <FAQsWidget limit={2}/>
+            <FAQsWidget limit={2} />
           </div>
-        </div>
+        </div> */}
 
         {/* Newsletter */}
         <div className="relative p-4">
@@ -200,7 +163,7 @@ export default function HomeComponent() {
                     autoComplete="email"
                     className="w-full rounded-md border-white px-5 py-3 placeholder-warm-gray-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-cyan-700"
                   />
-                  
+
                   <button
                     type="submit"
                     className="mt-3 flex w-full items-center justify-center rounded-md border border-transparent bg-green-400 px-5 py-3 text-base font-medium text-white hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 focus:ring-offset-cyan-700 sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0"
@@ -209,7 +172,7 @@ export default function HomeComponent() {
                   </button>
                 </form>
                 <div className="mt-2 p-2">
-                {state === 'Error' && (
+                  {state === 'Error' && (
                     <span className="error-state">{errorMsg}</span>
                   )}
                   {state === 'Success' && (
