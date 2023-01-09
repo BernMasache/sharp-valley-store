@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -6,14 +8,33 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors: {
+      transparent: 'transparent',
+      primary:colors.blue,
+      secondary:colors.red,
+      success: colors.green,
+      warning:colors.orange,
+      danger:colors.red,
+      info:colors.blue,
+      black: colors.black,
+      white: colors.white,
+      gray: colors.gray,
+      emerald: colors.emerald,
+      indigo: colors.indigo,
+      yellow: colors.yellow,
+      slate:colors.slate,
+      green:colors.green,
+      red:colors.red,
+      orange:colors.orange,
+      brown: "#362c0a",
+      gold:"4b3d0e"
+    },
   },
   plugins: [
     require('@tailwindcss/forms'),
     require('@tailwindcss/aspect-ratio'),
-  //   new webpack.ProvidePlugin({
-  //     $: 'jquery',
-  //     jQuery: 'jquery',
-  //     'window.jQuery': 'jquery'
-  // }),
+    require('tw-elements/dist/plugin'),
+    require('@tailwindcss/forms'),
+
   ],
 }

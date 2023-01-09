@@ -35,16 +35,18 @@ function AboutPage(props) {
 
                     <div className="relative">
                         <div className="relative overflow-hidden bg-sky-300 py-24 px-8 shadow-2xl lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-16">
-                            <div className="absolute inset-0 opacity-50 mix-blend-multiply saturate-0 filter">
+                            <div className="absolute inset-0 ">
                                 <img
                                     src="./tools/finding-temporary-housing-while-building-a-home-1200x800.jpg"
                                     alt=""
                                     className="h-full w-full object-cover"
                                 />
+                                <div className="absolute inset-0 bg-brown opacity-60 mix-blend-multiply" aria-hidden="true" />
+
                             </div>
                             <div className="relative lg:col-span-1">
 
-                                <h2 className="text-3xl text-gray-700 font-bold tracking-tight sm:text-4xl">About Us</h2>
+                                <h2 className="text-3xl text-gray-100 font-bold tracking-tight sm:text-4xl">About Us</h2>
                                 <blockquote className="mt-6 text-white">
                                     <p className="text-xl text-white font-medium sm:text-2xl">
                                         “A great building must begin with the immeasurable, must go through measurable means when it is being designed, and in the end must be unmeasured.” – Louis Kahn
@@ -99,7 +101,7 @@ function AboutPage(props) {
                             </div>
                         </section>
 
-                        
+
                     </div>
                 </div>
             </div>

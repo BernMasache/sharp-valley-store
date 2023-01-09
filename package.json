@@ -26,7 +26,8 @@
     "react-loader-spinner": "^5.3.4",
     "react-owl-carousel": "^2.3.3",
     "sweetalert2": "^11.6.16",
-    "swiper": "^8.4.5"
+    "swiper": "^8.4.5",
+    "tw-elements": "^1.0.0-alpha13"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

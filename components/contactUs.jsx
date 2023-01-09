@@ -64,7 +64,7 @@ export default function ContactUs() {
 
   }
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-50">
       <LoadingWidget loading={loading} />
       {/* <div className="bg-white relative sm:pb-32 py-2 lg:py-2">
 
@@ -91,12 +91,12 @@ export default function ContactUs() {
         </div>
       </div> */}
       <div className="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-        <div className="relative bg-white shadow-xl">
+        <div className="relative bg-white text-centerite shadow-xl">
           <h2 className="sr-only">Contact us</h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-3">
             {/* Contact information */}
-            <div className="relative overflow-hidden bg-sky-700 py-10 px-6 sm:px-10 xl:p-12">
+            <div className="relative overflow-hidden bg-brown py-10 px-6 sm:px-10 xl:p-12">
               <div className="pointer-events-none absolute inset-0 sm:hidden" aria-hidden="true">
                 <svg
                   className="absolute inset-0 h-full w-full"

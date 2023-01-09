@@ -60,49 +60,38 @@ export default function HomeCarouselComponent() {
                     navigation={false}
                     modules={[Autoplay, EffectCoverflow, Pagination, Navigation]}
                     effect="coverflow"
-                    className="mySwiper"
+                    className="relative bg-white"
                 >
-                    <div className="relative overflow-hidden py-4 px-8 shadow-2xl lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-16">
+                    <div className="">
                         {
                             carouselImagesContainer.map((carousel, key) => {
 
                                 return <SwiperSlide key={key}>
 
-                                    <div className="absolute inset-0 opacity-75">
+
+
+                                    <div className="absolute inset-0">
                                         <img
-                                            className="object-cover w-full h-full"
+                                            className="h-full w-full object-cover"
                                             src={carousel.url}
-                                            alt="image slide 3"
+                                            alt=""
                                         />
+                                        <div className="absolute inset-0 bg-brown opacity-60 mix-blend-multiply" aria-hidden="true" />
                                     </div>
-                                    <div className="relative sm:p-48 lg:col-span-1">
-                                        <div className="p-4">
-                                            <h1 className='text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl'>
-                                                {carousel.title}
-                                            </h1>
-                                        </div>
-                                        <blockquote className="mt-6 text-white">
-                                            <div className="">
-                                                <p className="text-sm font-normal sm:text-xl">
-                                                    {carousel.description}
-                                                </p>
 
-                                            </div>
-
-
-                                        </blockquote>
+                                    <div className="relative mx-auto max-w-7xl py-24 px-6 sm:py-32 lg:px-8 text-center">
+                                        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">{carousel.title}</h1>
+                                        <p className="text-sm tracking-tight text-white sm:text-xl lg:text-2xl">{carousel.description}
+                                        </p>
                                     </div>
                                 </SwiperSlide>
                             })
                         }
                     </div>
                 </Swiper>
-
-
-
-
             </div>
 
         </>
     );
 }
+

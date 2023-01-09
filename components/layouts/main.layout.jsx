@@ -44,7 +44,7 @@ export default function MainLayout({ children }) {
 
     return (
         <div className="bg-gray-50">
-            <div className='sticky top-0 z-30'>
+            <div className='fixed top-0 z-10 w-full'>
                 {/* Mobile menu */}
                 <Transition.Root show={mobileMenuOpen} as={Fragment}>
                     <Dialog as="div" className="relative z-40 lg:hidden" onClose={setMobileMenuOpen}>
@@ -149,7 +149,7 @@ export default function MainLayout({ children }) {
                 <header className="relative ">
                     <nav aria-label="Top">
                         {/* Top navigation */}
-                        <div className="bg-gray-900">
+                        <div className="bg-brown p-2">
                             <div className="mx-auto flex h-10 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
                                 {/* Currency selector */}
                                 <form className="hidden lg:block lg:flex-1">
@@ -157,8 +157,8 @@ export default function MainLayout({ children }) {
                                         <label htmlFor="Sharp Valley" className="sr-only">
                                             Sharp Valley
                                         </label>
-                                        <div className="group relative -ml-2 rounded-md border-transparent bg-gray-900 focus-within:ring-2 focus-within:ring-white">
-                                            <h1 className='text-white'>
+                                        <div className="group relative -ml-2 rounded-md border-transparent bg-brown focus-within:ring-2 focus-within:ring-white">
+                                            <h1 className='text-2xl font-bold text-white'>
                                                 Sharp Valley
 
                                             </h1>
@@ -306,11 +306,16 @@ export default function MainLayout({ children }) {
                     </Dialog>
                 </Transition.Root>
 
+
+            </div>
+
+            <div className="h-24 w-full">
+
+            </div>
                 <main className={styles.main}>
                     {children}
                 </main>
 
-            </div>
         </div>
     )
 }
