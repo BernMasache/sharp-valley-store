@@ -76,10 +76,15 @@ export default function NewsPage() {
             {features.map((news) => (
               <div key={news.name}>
 
-                <div className="bg-white pt-2 lg:py-4">
-                  <div className="bg-gray-500 pb-4 lg:relative lg:z-10 lg:pb-0">
+                <div className="pt-2 lg:py-8">
+
+                  <div className="pb-4 lg:relative lg:z-2 lg:pb-0">
+                    <div className="absolute inset-0 bg-gray-200 opacity-80 mix-blend-multiply" aria-hidden="true" />
+
                     <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8">
+
                       <div className="relative lg:-my-4">
+
                         <div aria-hidden="true" className="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden" />
                         <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:h-full lg:p-0">
                           <div className="aspect-w-16 aspect-h-16 overflow-hidden rounded-xl shadow-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
@@ -88,6 +93,7 @@ export default function NewsPage() {
                               src={news.imageSrc}
                               alt=""
                             />
+
                           </div>
                         </div>
                       </div>
@@ -97,15 +103,17 @@ export default function NewsPage() {
                             <div>
 
                               <div className="">
-                                <NewspaperIcon className='h-12 w-12 text-white opacity-75' />
+                                <NewspaperIcon className='h-12 w-12 text-zinc-700 opacity-75' />
                               </div>
-                              <p className="mt-6 text-xl text-white">
+                              <p className="mt-6 text-xl text-gray-700">
                                 {news.name}
                               </p>
                             </div>
                             <footer className="mt-6">
 
-                              <Link target="_blank" rel="" href={news.href} className="bg-transparent hover:bg-blue text-gray-100 font-semibold hover:text-gray-300 py-2 px-4 border border-blue hover:border-transparent rounded">Read full story</Link>
+                              <Link target="_blank" rel="" href={news.href} className="bg-transparent hover:bg-blue text-slate-700 font-semibold hover:text-gray-300 py-2 px-4 border border-blue hover:border-transparent rounded">
+                                Read full story
+                              </Link>
 
                             </footer>
                           </blockquote>

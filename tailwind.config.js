@@ -28,7 +28,7 @@ module.exports = {
       red:colors.red,
       orange:colors.orange,
       brown: "#362c0a",
-      gold:"4b3d0e",
+      sharp:"#2f2709",
       zinc:colors.zinc
     },
   },
