@@ -23,6 +23,7 @@ const navigation = {
             categories: [
                 { name: 'Home', href: '/home' },
                 { name: 'Management Team', href: '/management-team' },
+                { name: 'Partners', href: '/partners' },
                 { name: 'Project Management', href: '/projects' },
                 { name: 'Procurement', href: '/quality-used-equipment' },
                 { name: 'About Us', href: '/about' },

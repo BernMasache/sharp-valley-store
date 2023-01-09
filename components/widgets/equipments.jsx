@@ -13,29 +13,23 @@ const equipments = [
     {
         title: 'Machinery',
         href: '#',
-        description: " Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis etquo et molestiae."
+        description: " Arranged delivery of critical infrastructure for clients from the USA to Malawi, and Zambia during the pandemic"
 
     },
     {
         title: 'Brick Layer',
         href: '#',
-        description: " Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis etquo et molestiae."
+        description: " Guided foreign organization shopping for technology in the USA, set up secure communications, meetings, and review of contracts"
 
 
     },
     {
         title: 'Cement Mixer',
         href: '#',
-        description: " Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis etquo et molestiae."
+        description: " Guides transportation companies shopping for trucks in the United States and Europe"
 
 
-    },
-    {
-        title: 'Ladder',
-        href: '#',
-        description: " Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis etquo et molestiae."
-
-    },
+    }
 ]
 
 function classNames(...classes) {
@@ -63,11 +57,9 @@ export default function EquipmentsUsed() {
 
                                 <h2 className="text-3xl text-gray-100 font-bold tracking-tight sm:text-4xl">Procurement</h2>
                                 <blockquote className="mt-6 text-white">
-                                    <p className="text-xl text-white font-medium sm:text-2xl">
-                                        Building is about getting around the obstacles that are presented to you.
-                                    </p>
-                                    <p className="">
-                                        We shape our buildings; thereafter, they shape us.
+                                   
+                                    <p className="text-xl text-white font-medium sm:text-xl">
+                                    Sharp Valley transforms your procurement efforts using necessary insights, sourcing expertise, and experience that translates to clients operational efficiencies and cost savings.
                                     </p>
                                 </blockquote>
                             </div>
@@ -75,14 +67,14 @@ export default function EquipmentsUsed() {
 
                     </div>
                 </div>
-                <div className="mx-auto max-w-md sm:max-w-3xl sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
+                <div className="mx-auto max-w-md sm:max-w-3xl sm:py-8 sm:px-6 lg:max-w-7xl lg:px-8">
                     <div className="divide-y divide-warm-gray-200">
 
                         <section aria-labelledby="location-heading">
 
-                            <h2 className="text-4xl font-bold tracking-tight text-gray-900 text-center p-4 mb-4">Quality Equipments</h2>
+                            {/* <h2 className="text-4xl font-bold tracking-tight text-gray-900 text-center p-4 mb-4">Quality Equipments</h2> */}
 
-                            <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-200 shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
+                            <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-50 p-4 shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
                                 {equipments.map((action, actionIdx) => (
                                     <div
                                         key={action.title}
@@ -94,16 +86,16 @@ export default function EquipmentsUsed() {
                                             'relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500'
                                         )}
                                     >
-                                        <div className="mt-8">
+                                        <div className="m-4">
                                             <h3 className="text-lg font-medium">
                                                 <a href={action.href} className="focus:outline-none">
                                                     {/* Extend touch target to entire panel */}
                                                     <span className="absolute inset-0" aria-hidden="true" />
-                                                    {action.title}
+                                                    {/* {action.title} */}
                                                 </a>
                                             </h3>
-                                            <p className="mt-2 text-sm text-gray-500">
-                                                {action.description}
+                                            <p className="mt-2 font-medium text-lg text-gray-700">
+                                             <span className='font-medium text-gray-900'>(</span> {actionIdx+1} <span className='font-medium text-gray-900'>)</span> {action.description}
                                             </p>
                                         </div>
 
