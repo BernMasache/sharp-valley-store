@@ -12,7 +12,7 @@ function Investors(props) {
     return (
         <div>
             {/* CTA Section */}
-            <div className="relative bg-gray-900">
+            <div className="relative bg-brown">
                 <div className="relative h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
                     <img
                         className="h-full w-full object-cover"
