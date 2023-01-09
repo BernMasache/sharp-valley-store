@@ -13,6 +13,7 @@ const navigation = {
         { name: 'Project Management', href: '/projects' },
         { name: 'Procurement', href: '/quality-used-equipment' },
         { name: 'About Us', href: '/about' },
+        { name: 'Investors', href: '/investors' },
         { name: 'Contact Us', href: '/contact-us' },
         { name: 'News', href: '/news' },
     ],
@@ -27,6 +28,7 @@ const navigation = {
                 { name: 'Project Management', href: '/projects' },
                 { name: 'Procurement', href: '/quality-used-equipment' },
                 { name: 'About Us', href: '/about' },
+                { name: 'Investors', href: '/investors' },
                 { name: 'Contact Us', href: '/contact-us' },
                 { name: 'News', href: '/news' },
             ]

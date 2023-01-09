@@ -211,7 +211,7 @@ export default function ContactUs() {
                   <span className="ml-3">contact@sharpvalley.com</span>
                 </dd>
               </dl>
-              <ul role="list" className="mt-8 flex space-x-12">
+              <ul role="list" className="mt-8 flex space-x-12 sr-only">
                 <li>
                   <a className="text-indigo-200 hover:text-indigo-100" href="#">
                     <span className="sr-only">Facebook</span>

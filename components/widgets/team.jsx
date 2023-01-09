@@ -100,9 +100,7 @@ export default function ManagementTeam() {
                 <p className="text-xl text-white font-medium sm:text-2xl">
                   We dream, create, design, and build the most wonderful place in the world.
                 </p>
-                <p className="">
-                  We shape our buildings; thereafter, they shape us.
-                </p>
+                
               </blockquote>
             </div>
           </div>
