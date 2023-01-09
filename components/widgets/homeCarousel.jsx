@@ -6,6 +6,7 @@ import { EffectFade, EffectCreative, EffectCards, EffectCoverflow } from 'swiper
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { motion } from 'framer-motion';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
@@ -78,12 +79,14 @@ export default function HomeCarouselComponent() {
                                         />
                                         <div className="absolute inset-0 bg-brown opacity-60 mix-blend-multiply" aria-hidden="true" />
                                     </div>
+                                   
 
-                                    <div className="relative mx-auto max-w-7xl py-24 px-6 sm:py-32 lg:px-8 text-center">
-                                        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">{carousel.title}</h1>
-                                        <p className="text-sm tracking-tight text-white sm:text-xl lg:text-2xl">{carousel.description}
-                                        </p>
-                                    </div>
+                                        <div className="relative mx-auto max-w-7xl py-24 px-6 sm:py-32 lg:px-8 text-center">
+                                            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">{carousel.title}</h1>
+                                            <p className="text-sm tracking-tight text-white sm:text-xl lg:text-2xl">{carousel.description}
+                                            </p>
+                                        </div>
+                                    
                                 </SwiperSlide>
                             })
                         }

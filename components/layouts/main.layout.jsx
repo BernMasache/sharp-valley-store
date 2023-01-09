@@ -3,6 +3,8 @@ import { Dialog, Disclosure, Menu, Popover, Tab, Transition } from '@headlessui/
 import { Bars3Icon, MagnifyingGlassIcon, ShoppingCartIcon, UserIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import styles from "../../styles/Home.module.css"
 import Link from 'next/link'
+import { motion } from 'framer-motion';
+
 const navigation = {
     mainNave: [
         { name: 'Home', href: '/home' },
@@ -21,7 +23,7 @@ const navigation = {
             categories: [
                 { name: 'Home', href: '/home' },
                 { name: 'Management Team', href: '/management-team' },
-                { name: 'Project MAnagement', href: '/projects' },
+                { name: 'Project Management', href: '/projects' },
                 { name: 'Procurement', href: '/quality-used-equipment' },
                 { name: 'About Us', href: '/about' },
                 { name: 'Contact Us', href: '/contact-us' },
@@ -133,7 +135,22 @@ export default function MainLayout({ children }) {
 
                                                 <div className="group relative -ml-2 rounded-md border-transparent focus-within:ring-2 focus-within:ring-white">
                                                     <h1 className='text-white'>
-                                                        Sharp Valley
+                                                        <motion.div initial="hidden" animate="visible" variants={{
+                                                            hidden: {
+                                                                scale: .8,
+                                                                opacity: 50
+                                                            },
+                                                            visible: {
+                                                                scale: 1,
+                                                                opacity: 1,
+                                                                transition: {
+                                                                    delay: .4
+                                                                }
+                                                            },
+                                                        }}>
+
+                                                            Sharp Valley
+                                                        </motion.div>
 
                                                     </h1>
                                                 </div>
@@ -312,9 +329,9 @@ export default function MainLayout({ children }) {
             <div className="h-24 w-full">
 
             </div>
-                <main className={styles.main}>
-                    {children}
-                </main>
+            <main className={styles.main}>
+                {children}
+            </main>
 
         </div>
     )
