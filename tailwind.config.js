@@ -24,10 +24,12 @@ module.exports = {
       yellow: colors.yellow,
       slate:colors.slate,
       green:colors.green,
+      sky:colors.sky,
       red:colors.red,
       orange:colors.orange,
       brown: "#362c0a",
-      gold:"4b3d0e"
+      gold:"4b3d0e",
+      zinc:colors.zinc
     },
   },
   plugins: [

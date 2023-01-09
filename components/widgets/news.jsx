@@ -1,4 +1,4 @@
-import { BoltIcon, EnvelopeIcon, GlobeAltIcon, ScaleIcon, NewspaperIcon } from '@heroicons/react/24/outline'
+import { NewspaperIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 
 const features = [

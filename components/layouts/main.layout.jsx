@@ -184,14 +184,14 @@ export default function MainLayout({ children }) {
                                     <div className="flex h-16 items-center justify-between">
                                         {/* Logo (lg+) */}
                                         <div className="hidden lg:flex lg:items-center">
-                                            <a href="#">
+                                            <Link href="/home">
                                                 <span className="sr-only">Sharpvalley</span>
                                                 <img
                                                     className="h-8 w-auto sm:h-10"
                                                     src="./assets/images/sharpvalley.com_files/Sharp-Valley-1-e1550352772192-300x70.png"
                                                     alt=""
                                                 />
-                                            </a>
+                                            </Link>
                                         </div>
                                         {/* Mobile menu and search (lg-) */}
                                         <div className="flex flex-1 items-center lg:hidden">
