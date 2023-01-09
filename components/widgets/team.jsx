@@ -1,7 +1,7 @@
 const people = [
   {
     name: 'Michael Matengula',
-    role: 'CEO',
+    role: 'MBA, PMP, Ph.D. Candidate Chairman & CEO',
     imageUrl:
       './assets/images/team/11.jpg',
     twitterUrl: '',
@@ -14,6 +14,60 @@ const people = [
     role: 'Legal Counsel',
     imageUrl:
       './assets/images/team/3.jpg',
+    twitterUrl: '',
+    linkedinUrl: 'https://www.linkedin.com/in/gloria-mbendera-24674a171/',
+    description: "is an experienced legal professional with extensive hands-on experience in banking, drafting, conveyance, advisory services, company secretarial services, advising clients on compliance risks and issues (e.g. Malawi Exchange Control legal framework), drafting wills, probate services, offering professional legal advice on employment and labor laws, company and corporate law, insurance law, debt collection, drafting pleadings, conducting research, drafting legal opinions and heads of arguments for litigation purposes, and civil litigation. "
+  },
+  {
+    name: 'Henderson Chiwela',
+    role: 'Senior Adviser',
+    imageUrl:
+      './team/avatar.png',
+    twitterUrl: '',
+    linkedinUrl: 'https://www.linkedin.com/in/gloria-mbendera-24674a171/',
+    description: "is an experienced legal professional with extensive hands-on experience in banking, drafting, conveyance, advisory services, company secretarial services, advising clients on compliance risks and issues (e.g. Malawi Exchange Control legal framework), drafting wills, probate services, offering professional legal advice on employment and labor laws, company and corporate law, insurance law, debt collection, drafting pleadings, conducting research, drafting legal opinions and heads of arguments for litigation purposes, and civil litigation. "
+  },
+  {
+    name: 'Alipo Butao',
+    role: 'Project Manager',
+    imageUrl:
+      './team/avatar.png',
+    twitterUrl: '',
+    linkedinUrl: 'https://www.linkedin.com/in/gloria-mbendera-24674a171/',
+    description: "is an experienced legal professional with extensive hands-on experience in banking, drafting, conveyance, advisory services, company secretarial services, advising clients on compliance risks and issues (e.g. Malawi Exchange Control legal framework), drafting wills, probate services, offering professional legal advice on employment and labor laws, company and corporate law, insurance law, debt collection, drafting pleadings, conducting research, drafting legal opinions and heads of arguments for litigation purposes, and civil litigation. "
+  },
+  {
+    name: 'Peter Kumbani',
+    role: 'Marketing Manager',
+    imageUrl:
+      './team/avatar.png',
+    twitterUrl: '',
+    linkedinUrl: 'https://www.linkedin.com/in/gloria-mbendera-24674a171/',
+    description: "is an experienced legal professional with extensive hands-on experience in banking, drafting, conveyance, advisory services, company secretarial services, advising clients on compliance risks and issues (e.g. Malawi Exchange Control legal framework), drafting wills, probate services, offering professional legal advice on employment and labor laws, company and corporate law, insurance law, debt collection, drafting pleadings, conducting research, drafting legal opinions and heads of arguments for litigation purposes, and civil litigation. "
+  },
+  {
+    name: 'Mwai Matengula',
+    role: 'Executive Travel Consultant',
+    imageUrl:
+      './team/avatar.png',
+    twitterUrl: '',
+    linkedinUrl: 'https://www.linkedin.com/in/gloria-mbendera-24674a171/',
+    description: "is an experienced legal professional with extensive hands-on experience in banking, drafting, conveyance, advisory services, company secretarial services, advising clients on compliance risks and issues (e.g. Malawi Exchange Control legal framework), drafting wills, probate services, offering professional legal advice on employment and labor laws, company and corporate law, insurance law, debt collection, drafting pleadings, conducting research, drafting legal opinions and heads of arguments for litigation purposes, and civil litigation. "
+  }, 
+  {
+    name: 'Akuzike Maliwichi',
+    role: 'MBA, Human Resource Manager',
+    imageUrl:
+      './team/avatar.png',
+    twitterUrl: '',
+    linkedinUrl: 'https://www.linkedin.com/in/gloria-mbendera-24674a171/',
+    description: "is an experienced legal professional with extensive hands-on experience in banking, drafting, conveyance, advisory services, company secretarial services, advising clients on compliance risks and issues (e.g. Malawi Exchange Control legal framework), drafting wills, probate services, offering professional legal advice on employment and labor laws, company and corporate law, insurance law, debt collection, drafting pleadings, conducting research, drafting legal opinions and heads of arguments for litigation purposes, and civil litigation. "
+  }, 
+  {
+    name: 'Lawrence Matengula',
+    role: 'FCCA, CMA, MBA',
+    imageUrl:
+      './team/avatar.png',
     twitterUrl: '',
     linkedinUrl: 'https://www.linkedin.com/in/gloria-mbendera-24674a171/',
     description: "is an experienced legal professional with extensive hands-on experience in banking, drafting, conveyance, advisory services, company secretarial services, advising clients on compliance risks and issues (e.g. Malawi Exchange Control legal framework), drafting wills, probate services, offering professional legal advice on employment and labor laws, company and corporate law, insurance law, debt collection, drafting pleadings, conducting research, drafting legal opinions and heads of arguments for litigation purposes, and civil litigation. "
@@ -63,7 +117,7 @@ export default function ManagementTeam() {
           </div>
           <ul
             role="list"
-            className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3"
+            className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:max-w-5xl lg:grid-cols-4"
           >
             {people.map((person) => (
               <li key={person.name}>
@@ -72,7 +126,7 @@ export default function ManagementTeam() {
                   <div className="space-y-2">
                     <div className="space-y-1 text-lg font-medium leading-6">
                       <h3>{person.name}</h3>
-                      <p className="text-indigo-600">{person.role}</p>
+                      <p className="text-gray-600 opacity-70">{person.role}</p>
                     </div>
                     <ul role="list" className="flex justify-center space-x-5">
                       <li>
