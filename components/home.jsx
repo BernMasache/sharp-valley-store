@@ -120,8 +120,6 @@ export default function HomeComponent() {
         
       </main>
 
-
-      <FooterComponent/>
     </div>
   )
 }
