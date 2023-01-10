@@ -106,7 +106,7 @@ export default function HomeComponent() {
           <div>
             <div className="divide-y">
 
-              <section aria-labelledby="location-heading">
+              <section aria-labelledby="location-heading" className='mb-8'>
                 <Processes />
               </section>
 
