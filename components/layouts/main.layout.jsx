@@ -228,14 +228,14 @@ export default function MainLayout({ children }) {
                                         </div>
 
                                         {/* Logo (lg-) */}
-                                        <a href="#" className="lg:hidden">
+                                        <Link href="/home" className="lg:hidden">
                                             <span className="sr-only">Sharp Valley</span>
                                             <img
                                                 src="./assets/images/cropped-Sharp-Valley-2.png"
                                                 alt=""
                                                 className="h-8 w-auto"
                                             />
-                                        </a>
+                                        </Link>
 
                                         <div className="flex flex-1 items-center justify-end">
                                             <div className="flex items-center lg:ml-8">
