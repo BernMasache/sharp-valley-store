@@ -4,6 +4,7 @@ import { Bars3Icon, MagnifyingGlassIcon, ShoppingCartIcon, UserIcon, XMarkIcon }
 import styles from "../../styles/Home.module.css"
 import Link from 'next/link'
 import { motion } from 'framer-motion';
+import FooterComponent from '../widgets/footer'
 
 const navigation = {
     mainNave: [
@@ -335,6 +336,7 @@ export default function MainLayout({ children }) {
             <main className={styles.main}>
                 {children}
             </main>
+            <FooterComponent/>
 
         </div>
     )
