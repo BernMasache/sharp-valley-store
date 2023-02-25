@@ -6,7 +6,7 @@ export default function VideoPage() {
         alt=""
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       /> */}
-      <video src="./assets/videos/Construction Site 3-Stock Video.mov"
+      <video src="./assets/videos/video_1.mov"
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       autoPlay loop
       >
