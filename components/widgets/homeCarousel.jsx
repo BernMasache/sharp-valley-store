@@ -44,7 +44,7 @@ export default function HomeCarouselComponent() {
     ]
     return (
         <>
-            <div className="bg-white relative sm:pb-32 py-2 lg:py-2">
+            <div className="bg-white relative sm:pb-48 py-2 lg:py-2">
 
                 <Swiper
                     spaceBetween={30}
@@ -61,7 +61,7 @@ export default function HomeCarouselComponent() {
                     navigation={false}
                     modules={[Autoplay, EffectCoverflow, Pagination, Navigation]}
                     effect="coverflow"
-                    className="relative bg-white"
+                    className="relative bg-white h-96"
                 >
                     <div className="">
                         {

@@ -86,7 +86,7 @@ function ProjectsDetails(props) {
         <div>
 
             {/* Blog section */}
-            <div className="relative bg-gray-50 py-16 sm:py-4 lg:py-8">
+            <div className="relative bg-gray-50 py-8 sm:mt-2">
                 <div className="relative">
                     <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
 
@@ -100,7 +100,7 @@ function ProjectsDetails(props) {
                             </Link>
                         </div>
                     </div>
-                    <div className="mx-auto mt-12 grid max-w-md gap-8 px-6 sm:max-w-lg lg:max-w-7xl lg:grid-cols-3 lg:px-8">
+                    <div className="mx-auto mt-4 grid max-w-md gap-8 px-6 sm:max-w-lg lg:max-w-7xl lg:grid-cols-3 lg:px-8 sm:mt-4">
                         {projects.slice(0, 3).map((project) => (
                             <div key={project.id} className="flex flex-col overflow-hidden rounded-lg shadow-lg">
                                 <div className="flex-shrink-0">

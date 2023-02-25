@@ -13,7 +13,7 @@
     "@headlessui/react": "^1.7.7",
     "@heroicons/react": "^2.0.13",
     "@mailchimp/mailchimp_marketing": "^3.0.80",
-    "@next/font": "13.1.1",
+    "@next/font": "^13.1.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
     "axios": "^1.2.2",
@@ -26,7 +26,8 @@
     "react-dom": "18.2.0",
     "react-loader-spinner": "^5.3.4",
     "react-owl-carousel": "^2.3.3",
-    "sweetalert2": "^11.6.16",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.7.2",
     "swiper": "^8.4.5",
     "tw-elements": "^1.0.0-alpha13"
   },

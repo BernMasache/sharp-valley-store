@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      // fontFamily:{
+      //   sans:['var(--font-inter']
+      // },
+      
       animation: {
         'spin-slow': 'spin 3s linear',
       },
@@ -39,7 +43,8 @@ module.exports = {
       orange:colors.orange,
       brown: "#362c0a",
       sharp:"#2f2709",
-      zinc:colors.zinc
+      zinc:colors.zinc,
+      gold:colors.gold
     },
   },
   plugins: [

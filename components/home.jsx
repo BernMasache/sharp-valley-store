@@ -3,14 +3,11 @@ import { Bars3Icon, XMarkIcon, PhoneIcon, EnvelopeIcon, LinkIcon, MapPinIcon } f
 import { Disclosure, Menu, Popover, Transition } from '@headlessui/react'
 
 import styles from '../styles/Home.module.css'
-import AllCompounds from './widgets/footer/compounds'
-import Processes from './widgets/footer/ourProcesses'
-import FAQsWidget from './widgets/footer/faqs'
 import axios from 'axios'
 import Swal from 'sweetalert2'
-import HomeCarouselComponent from './widgets/homeCarousel'
-import FooterComponent from './widgets/footer'
-import ProjectsDetails from './widgets/projectsDetails'
+import VideoPage from './widgets/videoPage'
+import MenAtWork from './widgets/menAtWork'
+import Testimonials from './widgets/testimonials'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -57,9 +54,7 @@ export default function HomeComponent() {
   const [errorMsg, setErrorMsg] = useState(null)
 
   const getEmail = (e) => {
-
     setEmail(e.target.value)
-
   }
   const subscribe = async (e) => {
     e.preventDefault()
@@ -94,32 +89,13 @@ export default function HomeComponent() {
     }
   }
 
-
   return (
     <div className={styles.main}>
-
-      <HomeCarouselComponent/>
-      <main>
-
-        <div className="bg-white">
-          {/* className="mx-auto max-w-md py-2 px-4 sm:max-w-3xl sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8" */}
-          <div>
-            <div className="divide-y">
-
-              <section aria-labelledby="location-heading" className='mb-8'>
-                <Processes />
-              </section>
-
-                <ProjectsDetails/>
-             
-            </div>
-          </div>
-        </div>
-
-       
-        
+      <VideoPage/>
+      <main >
+        <MenAtWork/>
+        <Testimonials/>
       </main>
-
     </div>
   )
 }

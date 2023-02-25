@@ -63,43 +63,43 @@ export default function FooterComponent() {
   const [state, setState] = useState('idle')
   const [errorMsg, setErrorMsg] = useState(null)
 
-  const getEmail = (e) => {
+  // const getEmail = (e) => {
 
-    setEmail(e.target.value)
+  //   setEmail(e.target.value)
 
-  }
-  const subscribe = async (e) => {
-    e.preventDefault()
-    setState('Loading')
+  // }
+  // const subscribe = async (e) => {
+  //   e.preventDefault()
+  //   setState('Loading')
 
-    try {
+  //   try {
 
-      const response = await axios.post('/api/subscribe', { email })
+  //     const response = await axios.post('/api/subscribe', { email })
 
-      setState('Success')
-      setEmail('')
+  //     setState('Success')
+  //     setEmail('')
 
-      Swal.fire({
-        icon: "success",
-        title: 'Subscribed!',
-        text: 'Successfully subscribed to our news letter',
-        position: "center",
-        showConfirmButton: false,
-      })
+  //     Swal.fire({
+  //       icon: "success",
+  //       title: 'Subscribed!',
+  //       text: 'Successfully subscribed to our news letter',
+  //       position: "center",
+  //       showConfirmButton: false,
+  //     })
 
-    } catch (e) {
-      Swal.fire({
-        icon: "error",
-        title: 'Failed!',
-        text: 'Failed to subscribed to our news letter, check your email or network connection',
-        position: "center",
-        showConfirmButton: false,
-      })
+  //   } catch (e) {
+  //     Swal.fire({
+  //       icon: "error",
+  //       title: 'Failed!',
+  //       text: 'Failed to subscribed to our news letter, check your email or network connection',
+  //       position: "center",
+  //       showConfirmButton: false,
+  //     })
 
-      setErrorMsg("Error occured: Check your email or network connection")
-      setState('Error')
-    }
-  }
+  //     setErrorMsg("Error occured: Check your email or network connection")
+  //     setState('Error')
+  //   }
+  // }
   return (
     <footer className="bg-sharp" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
@@ -126,33 +126,14 @@ export default function FooterComponent() {
 
           </div>
           <div className="mt-8 xl:mt-0">
-            <h3 className="text-base font-medium text-white">Subscribe to our newsletter</h3>
+            <h3 className="text-base font-medium text-white">Quick Links</h3>
             <p className="mt-4 text-base text-gray-300">
-              The latest news, articles, and resources, sent to your inbox weekly.
+              Home
             </p>
-            <form className="mt-4 sm:flex sm:max-w-md" onSubmit={subscribe}>
-              <label htmlFor="email-address" className="sr-only">
-                Email address
-              </label>
-              <input
-                onChange={getEmail}
-                id="email-input"
-                name="email"
-                ref={inputEl}
-                required
-                type="email"
-                className="w-full min-w-0 appearance-none rounded-md border border-transparent bg-white py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:border-white focus:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Enter your email"
-              />
-              <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                <button
-                  type="submit"
-                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-slate-500 py-2 px-4 text-base font-medium text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800"
-                >
-                  Notify me
-                </button>
-              </div>
-            </form>
+            <p className="mt-4 text-base text-gray-300">
+              Projects
+            </p>
+            
             <div className="mt-2 p-2">
               {state === 'Error' && (
                 <span className="error-state">{errorMsg}</span>

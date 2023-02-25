@@ -9,12 +9,10 @@ import FooterComponent from '../widgets/footer'
 const navigation = {
     mainNave: [
         { name: 'Home', href: '/home' },
-        { name: 'Management Team', href: '/management-team' },
         { name: 'Partners', href: '/partners' },
         { name: 'Project Management', href: '/projects' },
         { name: 'Procurement', href: '/quality-used-equipment' },
         { name: 'About Us', href: '/about' },
-        { name: 'Investors', href: '/investors' },
         { name: 'Contact Us', href: '/contact-us' },
         { name: 'News', href: '/news' },
     ],
@@ -24,12 +22,10 @@ const navigation = {
             name: 'Sharp Valley',
             categories: [
                 { name: 'Home', href: '/home' },
-                { name: 'Management Team', href: '/management-team' },
                 { name: 'Partners', href: '/partners' },
                 { name: 'Project Management', href: '/projects' },
                 { name: 'Procurement', href: '/quality-used-equipment' },
                 { name: 'About Us', href: '/about' },
-                { name: 'Investors', href: '/investors' },
                 { name: 'Contact Us', href: '/contact-us' },
                 { name: 'News', href: '/news' },
             ]
@@ -49,7 +45,7 @@ export default function MainLayout({ children }) {
 
 
     return (
-        <div className="bg-gray-50">
+        <div className="bg-white">
             <div className='fixed top-0 z-10 w-full'>
                 {/* Mobile menu */}
                 <Transition.Root show={mobileMenuOpen} as={Fragment}>
@@ -75,7 +71,7 @@ export default function MainLayout({ children }) {
                                 leaveFrom="translate-x-0"
                                 leaveTo="-translate-x-full"
                             >
-                                <Dialog.Panel className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-white pb-12 shadow-xl">
+                                <Dialog.Panel className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-sharp pb-12 shadow-xl">
                                     <div className="flex px-4 pt-5 pb-2">
                                         <button
                                             type="button"
@@ -89,15 +85,15 @@ export default function MainLayout({ children }) {
 
                                     {/* Links */}
                                     <Tab.Group as="div" className="mt-2">
-                                        <div className="border-b border-gray-200">
+                                        <div className="border-b border-gray-100">
                                             <Tab.List className="-mb-px flex space-x-8 px-4">
                                                 {navigation.categories.map((category) => (
                                                     <Tab
                                                         key={category.name}
                                                         className={({ selected }) =>
                                                             classNames(
-                                                                selected ? 'text-indigo-600 border-indigo-600' : 'text-gray-900 border-transparent',
-                                                                'flex-1 whitespace-nowrap border-b-2 py-4 px-1 text-base font-medium'
+                                                                selected ? 'text-gray-100' : 'text-gray-900 border-transparent',
+                                                                'flex-1 whitespace-nowrap py-4 px-1 text-base font-medium'
                                                             )
                                                         }
                                                     >
@@ -117,7 +113,7 @@ export default function MainLayout({ children }) {
                                                                 <ul role="list" aria-labelledby="mobile-categories-heading" className="mt-6 space-y-6">
                                                                     {category.categories.map((item) => (
                                                                         <li key={item.name} className="flex">
-                                                                            <Link href={item.href} className="font-medium text-gray-500 hover:text-gray-700">
+                                                                            <Link href={item.href} className="font-medium text-gray-50 hover:text-gray-700">
                                                                                 {item.name}
                                                                             </Link>
                                                                         </li>
@@ -170,7 +166,7 @@ export default function MainLayout({ children }) {
                 <header className="relative ">
                     <nav aria-label="Top">
                         {/* Top navigation */}
-                        <div className="bg-brown p-2">
+                        <div className="bg-yellow-700 p-2">
                             <div className="mx-auto flex h-10 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
                                 {/* Currency selector */}
                                 <form className="hidden lg:block lg:flex-1">
@@ -178,7 +174,7 @@ export default function MainLayout({ children }) {
                                         <label htmlFor="Sharp Valley" className="sr-only">
                                             Sharp Valley
                                         </label>
-                                        <div className="group relative -ml-2 rounded-md border-transparent bg-brown focus-within:ring-2 focus-within:ring-white">
+                                        <div className="group relative -ml-2 rounded-md border-transparent bg-yellow-700 focus-within:ring-2 focus-within:ring-white">
                                             <h1 className='text-2xl font-bold text-white'>
                                                 Sharp Valley
 
@@ -192,14 +188,14 @@ export default function MainLayout({ children }) {
 
                                     <span className="h-6 w-px bg-gray-600" aria-hidden="true" />
                                     <a href="#" className="text-sm font-medium text-white hover:text-gray-100">
-                                        {['Jan', 'Feb', 'March', 'April', 'May', 'Jun', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][new Date().getMonth()]} {new Date().getDay()}, {new Date().getFullYear()}
+                                        {['Jan', 'Feb', 'March', 'April', 'May', 'Jun', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][new Date().getMonth()]} {new Date().getDate()}, {new Date().getFullYear()}
                                     </a>
                                 </div>
                             </div>
                         </div>
 
                         {/* Secondary navigation */}
-                        <div className="bg-white">
+                        <div className="bg-sharp">
                             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                                 <div className="border-b border-gray-200">
                                     <div className="flex h-16 items-center justify-between">
@@ -218,7 +214,7 @@ export default function MainLayout({ children }) {
                                         <div className="flex flex-1 items-center lg:hidden">
                                             <button
                                                 type="button"
-                                                className="-ml-2 rounded-md bg-white p-2 text-gray-400"
+                                                className="-ml-2 rounded-md bg-yellow-700 p-2 text-sharp"
                                                 onClick={() => setMobileMenuOpen(true)}
                                             >
                                                 <span className="sr-only">Open menu</span>
@@ -256,7 +252,7 @@ export default function MainLayout({ children }) {
                                                                     className={classNames(
                                                                         open
                                                                             ? 'border-indigo-600 text-indigo-600 flex'
-                                                                            : 'border-transparent text-gray-700 hover:text-gray-800',
+                                                                            : 'border-transparent text-gray-50 hover:text-gray-200',
                                                                         'relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out'
                                                                     )}
                                                                 >
