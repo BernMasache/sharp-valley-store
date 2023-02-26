@@ -2,7 +2,7 @@ export default function VideoPage() {
   return (
     <div className="relative isolate overflow-hidden bg-white py-44 sm:py-64">
       <img
-        src="./assets/images/Slide-Show-3-.jpg"
+        src="./tools/finding-temporary-housing-while-building-a-home-1200x800.jpg"
         alt=""
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
