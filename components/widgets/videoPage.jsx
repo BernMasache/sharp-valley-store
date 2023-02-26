@@ -1,17 +1,17 @@
 export default function VideoPage() {
   return (
     <div className="relative isolate overflow-hidden bg-white py-44 sm:py-64">
-      {/* <img
+      <img
         src="./assets/images/Slide-Show-3-.jpg"
         alt=""
         className="absolute inset-0 -z-10 h-full w-full object-cover"
-      /> */}
-      <video src="./assets/videos/video_1.mov"
+      />
+      {/* <video src="./assets/videos/video_1.mov"
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       autoPlay loop
       >
 
-      </video>
+      </video> */}
       <svg
         viewBox="0 0 1097 845"
         aria-hidden="true"

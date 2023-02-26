@@ -15,7 +15,7 @@ const tabs = [
                 investment: "Construction of dwelling units in blocks of Flats with ancillary works",
                 estimatedCost: "US$27,131,900 US dollars",
                 imageSrc: './project/materials/01-1024x683.png',
-                imageAlt: 'Maple organizer base with slots, supporting white polycarbonate trays of various sizes.',
+                imageAlt: '',
                 relatedMaterial: "./project/materials/Screen-Shot-2019-04-02-at-9.01.20-PM-768x731.png"
             },
         ],
@@ -29,7 +29,7 @@ const tabs = [
                     'Located between Bunda turnoff and Nanjiri',
                 imageSrc: './project/materials/01-1024x683.png',
                 imageAlt:
-                    'Walnut organizer base with pen, sticky note, phone, and bin trays, next to modular drink coaster attachment.',
+                    '',
             },
         ],
     },
@@ -40,8 +40,8 @@ const tabs = [
                 name: 'Plots for Sale',
                 description:
                     "Plots",
-                imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-03.jpg',
-                imageAlt: 'Walnut organizer base with white polycarbonate trays in the kitchen with various kitchen utensils.',
+                imageSrc: './project/materials/01-1024x683.png',
+                imageAlt: '',
             },
         ],
     },
@@ -52,8 +52,8 @@ const tabs = [
                 name: "Plots for Sale",
                 description:
                     'Plots',
-                imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-04.jpg',
-                imageAlt: 'Walnut organizer system on black leather desk mat on top of white desk.',
+                imageSrc: './project/materials/01-1024x683.png',
+                imageAlt: '',
             },
         ],
     },

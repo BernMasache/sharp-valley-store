@@ -16,7 +16,8 @@ const testimonials = [
 
     },
     {
-        title: '',
+        title: 'If a building looks better under construction than it does when finished, then it’s a failure.',
+
         alt: "",
         imageUrl: './images/IMG-20230222-WA0007.jpg',
         location: "DC Project"
@@ -24,7 +25,8 @@ const testimonials = [
     },
     // More testimonials...
     {
-        title: '',
+        title: ' Construction is the art of making a meaningful whole out of many parts. Buildings are witnesses to the human ability to construct concrete things.',
+
         alt: "",
         imageUrl: './images/IMG-20230222-WA0003.jpg',
         location: "DC Project"
@@ -37,7 +39,7 @@ export default function MenAtWork() {
         <div className="bg-gray-50 py-8 sm:py-8">
             <div className="mx-auto  px-6 lg:px-8">
                 <div className="mx-auto max-w-xl text-center">
-                    
+
                     <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                         Men at work
 
@@ -55,7 +57,7 @@ export default function MenAtWork() {
 
                                     <div className="absolute inset-0 bg-gradient-to-b from-trabsparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70" />
                                     <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[90%] group-hover:translate-y-0 transition-all">
-                                       
+
                                         <p className="text-lg italic text-white mb-3">
                                             {item.title}
                                         </p>
