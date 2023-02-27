@@ -175,7 +175,7 @@ export default function ContactPage() {
                             </div>
                             <h3 className="text-lg font-medium text-gray-100 font-semibold uppercase">Contact Us</h3>
                             <p className="mt-6 max-w-3xl text-base text-indigo-50">
-                                If you have anything to say or ask, please, leave a message below and we will help you accordingly
+                                If you have anything to say or ask, please, leave a message below and we will help you accordingly.
 
                             </p>
                             <dl className="mt-8 space-y-6">
