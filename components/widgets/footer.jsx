@@ -2,7 +2,7 @@ import { Fragment, useEffect, useRef, useState } from 'react'
 import Swal from 'sweetalert2';
 const navigation = {
   companyInfo: [
-    { name: '+1 (972) 504 3766', href: '#' },
+    { name: '+1 (972) 310 0977', href: '#' },
     { name: 'contact@sharpvalley.com', href: '#' },
     { name: 'P.O. Box 40394 Kanengo Lilongwe 4', href: '#' },
 
@@ -154,7 +154,7 @@ export default function FooterComponent() {
             ))}
           </div>
           <p className="mt-8 text-base text-gray-400 md:order-1 md:mt-0">
-            &copy; {new Date().getFullYear()} Sharp Valley Holdings, Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} Sharp Valley Holdings LLC, Inc. All rights reserved.
           </p>
         </div>
       </div>
