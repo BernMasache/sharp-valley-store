@@ -176,7 +176,7 @@ export default function MainLayout({ children }) {
                                         </label>
                                         <div className="group relative -ml-2 rounded-md border-transparent bg-gold focus-within:ring-2 focus-within:ring-white">
                                             <h1 className='text-2xl font-bold text-white'>
-                                                Sharp Valley
+                                                Sharp Valley Holdings LLC
 
                                             </h1>
                                         </div>

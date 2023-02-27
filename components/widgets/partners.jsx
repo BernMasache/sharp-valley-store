@@ -103,7 +103,7 @@ export default function Example() {
 
                 <div className="-mx-px grid grid-cols-1 border-l border-gray-200 sm:mx-0 md:grid-cols-2 lg:grid-cols-5">
                     {partners.map((partner, key) => (
-                        <div key={key} id={key} onClick={partnerDetails} className="group relative border-r border-b border-gray-200 cursor-pointer">
+                        <div key={key} id={key} onClick={partnerDetails} className="group p-2 relative border-r border-b border-gray-200 cursor-pointer">
                             <div id={partner.id} className="aspect-w-1 aspect-h-1 overflow-hidden bg-gray-200 group-hover:opacity-75">
                                 <img
                                     id={partner.id}
