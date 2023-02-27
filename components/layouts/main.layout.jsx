@@ -166,7 +166,7 @@ export default function MainLayout({ children }) {
                 <header className="relative ">
                     <nav aria-label="Top">
                         {/* Top navigation */}
-                        <div className="bg-yellow-700 p-2">
+                        <div className="bg-yellow-600 p-2">
                             <div className="mx-auto flex h-10 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
                                 {/* Currency selector */}
                                 <form className="hidden lg:block lg:flex-1">
@@ -174,7 +174,7 @@ export default function MainLayout({ children }) {
                                         <label htmlFor="Sharp Valley" className="sr-only">
                                             Sharp Valley
                                         </label>
-                                        <div className="group relative -ml-2 rounded-md border-transparent bg-yellow-700 focus-within:ring-2 focus-within:ring-white">
+                                        <div className="group relative -ml-2 rounded-md border-transparent bg-yellow-600 focus-within:ring-2 focus-within:ring-white">
                                             <h1 className='text-2xl font-bold text-white'>
                                                 Sharp Valley
 
@@ -186,7 +186,7 @@ export default function MainLayout({ children }) {
 
                                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
 
-                                    <span className="h-6 w-px bg-gray-600" aria-hidden="true" />
+                                    <span className="h-6 w-px bg-gray-50" aria-hidden="true" />
                                     <a href="#" className="text-sm font-medium text-white hover:text-gray-100">
                                         {['Jan', 'Feb', 'March', 'April', 'May', 'Jun', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][new Date().getMonth()]} {new Date().getDate()}, {new Date().getFullYear()}
                                     </a>
