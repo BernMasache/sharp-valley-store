@@ -28,7 +28,7 @@
 //               <p>contact@sharpvalley.com</p>
 //             </address>
 //           </div>
-          
+
 //         </div>
 //       </div>
 //     </div>
@@ -52,8 +52,7 @@
 import { useForm, ValidationError } from '@formspree/react';
 import Swal from 'sweetalert2'
 import Router from 'next/router';
-import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
-
+import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 export default function ContactPage() {
     const [state, handleSubmit] = useForm("mrgvpvqb");
     if (state.succeeded) {
@@ -174,28 +173,46 @@ export default function ContactPage() {
                                     </defs>
                                 </svg>
                             </div>
-                            <h3 className="text-lg font-medium text-white">Contact information</h3>
+                            <h3 className="text-lg font-medium text-gray-100 font-semibold uppercase">Contact Us</h3>
                             <p className="mt-6 max-w-3xl text-base text-indigo-50">
-                            If you have anything to say or ask, please, leave a message below and we will help you accordingly
+                                If you have anything to say or ask, please, leave a message below and we will help you accordingly
 
                             </p>
                             <dl className="mt-8 space-y-6">
-                                <dt>
-                                    <span className="sr-only">Phone number</span>
+                                <dt >
+                                    <span className="text-gray-100 font-semibold uppercase">Address</span>
+                                </dt>
+                                <div className="flex gap-x-4">
+
+                                    <dt className="flex-none">
+                                        <BuildingOffice2Icon className="h-7 w-6 text-gray-100" aria-hidden="true" />
+                                    </dt>
+                                    <address className="border-l border-gray-200 pt-2 pl-6 not-italic text-gray-100">
+                                        <p>P.O Box 40394</p>
+                                        <p>Kanengo, Lilongwe 4</p>
+                                    </address>
+                                    {/* <dd className='text-gray-100'>
+                                        545 Mavis Island
+                                        <br />
+                                        Chicago, IL 99191
+                                    </dd> */}
+                                </div>
+                                <dt >
+                                    <span className="text-gray-100 font-semibold uppercase">Phone number</span>
                                 </dt>
                                 <dd className="flex text-base text-indigo-50">
                                     <PhoneIcon className="h-6 w-6 flex-shrink-0 text-indigo-200" aria-hidden="true" />
-                                    <span className="ml-3">+265 888 512 035</span>
+                                    <span className="ml-3">+1 (972) 310 0977</span>
                                 </dd>
                                 <dt>
-                                    <span className="sr-only">Email</span>
+                                    <span className="text-gray-100 font-semibold uppercase">Email</span>
                                 </dt>
                                 <dd className="flex text-base text-indigo-50">
                                     <EnvelopeIcon className="h-6 w-6 flex-shrink-0 text-indigo-200" aria-hidden="true" />
-                                    <span className="ml-3">gremapvtschools@gmail.com</span>
+                                    <span className="ml-3">contact@sharpvalley.com</span>
                                 </dd>
                             </dl>
-                            <ul role="list" className="mt-8 flex space-x-12">
+                            <ul role="list" className="sr-only mt-8 flex space-x-12">
                                 <li>
                                     <a className="text-indigo-200 hover:text-indigo-100" href="#">
                                         <span className="sr-only">Facebook</span>
@@ -260,50 +277,31 @@ export default function ContactPage() {
                         <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
                             <h3 className="text-lg font-medium text-gray-900">Send us a message</h3>
                             <form onSubmit={handleSubmit} className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
-                                
+
                                 <div>
                                     <label htmlFor="first-name" className="block text-sm font-medium text-gray-900">
-                                        Full name
+                                        Name
                                     </label>
                                     <div className="mt-1">
                                         <input
                                             type="text"
-                                            name="firstname"
-                                            id="firstname"
+                                            name="name"
+                                            id="name"
                                             autoComplete="given-name"
                                             placeholder='enter your first name here...'
                                             className="block w-full bg-gray-100 rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                                         />
-                                        {/* <ValidationError
+                                        <ValidationError
                                             prefix="Firstname"
                                             field="firstname"
                                             errors={state.errors}
-                                        /> */}
-                                    </div>
-                                </div>
-                                <div>
-                                    <label htmlFor="first-name" className="block text-sm font-medium text-gray-900">
-                                        Full name
-                                    </label>
-                                    <div className="mt-1">
-                                        <input
-                                            type="text"
-                                            name="lastname"
-                                            id="lastname"
-                                            autoComplete="given-name"
-                                            placeholder='enter your last name here...'
-                                            className="block w-full bg-gray-100 rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                                         />
-                                        {/* <ValidationError
-                                            prefix="Lastname"
-                                            field="lastname"
-                                            errors={state.errors}
-                                        /> */}
                                     </div>
                                 </div>
+
                                 <div>
                                     <label htmlFor="first-name" className="block text-sm font-medium text-gray-900">
-                                        Email address
+                                        Email Address
                                     </label>
                                     <div className="mt-1">
                                         <input
@@ -314,20 +312,39 @@ export default function ContactPage() {
                                             placeholder='enter your email address'
                                             className="block w-full bg-gray-100 rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                                         />
-                                        {/* <ValidationError
+                                        <ValidationError
                                             prefix="Email"
                                             field="email"
                                             errors={state.errors}
-                                        /> */}
+                                        />
                                     </div>
                                 </div>
-
+                                <div>
+                                    <label htmlFor="first-name" className="block text-sm font-medium text-gray-900">
+                                        Company
+                                    </label>
+                                    <div className="mt-1">
+                                        <input
+                                            type="text"
+                                            name="company"
+                                            id="company"
+                                            autoComplete="company-name"
+                                            placeholder='enter company name here...'
+                                            className="block w-full bg-gray-100 rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                        />
+                                        <ValidationError
+                                            prefix="company"
+                                            field="company"
+                                            errors={state.errors}
+                                        />
+                                    </div>
+                                </div>
                                 <div>
                                     <div className="flex justify-between">
                                         <label htmlFor="phone" className="block text-sm font-medium text-gray-900">
-                                            Phone
+                                            Phone Number
                                         </label>
-                                       
+
                                     </div>
                                     <div className="mt-1">
                                         <input
@@ -339,11 +356,11 @@ export default function ContactPage() {
                                             className="block bg-gray-100 w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                                             aria-describedby="phone-optional"
                                         />
-                                        {/* <ValidationError
+                                        <ValidationError
                                             prefix="Phome"
                                             field="phone"
                                             errors={state.errors}
-                                        /> */}
+                                        />
                                     </div>
                                 </div>
 
@@ -360,22 +377,22 @@ export default function ContactPage() {
                                         <textarea
                                             id="message"
                                             name="message"
-                                            rows={4}
+                                            rows={5}
                                             placeholder="enter your message here..."
                                             className="block bg-gray-100 w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                                             aria-describedby="message-max"
                                             defaultValue={''}
                                         />
-                                        {/* <ValidationError
+                                        <ValidationError
                                             prefix="Message"
                                             field="message"
                                             errors={state.errors}
-                                        /> */}
+                                        />
                                     </div>
                                 </div>
                                 <div className="sm:col-span-2 sm:flex sm:justify-end">
                                     <button
-                                        
+
                                         type="submit"
                                         className="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-sharp px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
                                     >
