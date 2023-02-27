@@ -42,10 +42,12 @@ module.exports = {
       red:colors.red,
       orange:colors.orange,
       brown: "#362c0a",
-      sharp:"#333",
+      sharp:"#25282a",
       store:"#2f2709",
       zinc:colors.zinc,
-      gold:colors.gold
+      gold:"#caab68",
+      goldTwo:"#7b6031",
+      goldThree:"#9c7d3c"
     },
   },
   plugins: [

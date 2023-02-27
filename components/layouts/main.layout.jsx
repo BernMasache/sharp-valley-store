@@ -166,7 +166,7 @@ export default function MainLayout({ children }) {
                 <header className="relative ">
                     <nav aria-label="Top">
                         {/* Top navigation */}
-                        <div className="bg-yellow-600 p-2">
+                        <div className="bg-gold p-2">
                             <div className="mx-auto flex h-10 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
                                 {/* Currency selector */}
                                 <form className="hidden lg:block lg:flex-1">
@@ -174,7 +174,7 @@ export default function MainLayout({ children }) {
                                         <label htmlFor="Sharp Valley" className="sr-only">
                                             Sharp Valley
                                         </label>
-                                        <div className="group relative -ml-2 rounded-md border-transparent bg-yellow-600 focus-within:ring-2 focus-within:ring-white">
+                                        <div className="group relative -ml-2 rounded-md border-transparent bg-gold focus-within:ring-2 focus-within:ring-white">
                                             <h1 className='text-2xl font-bold text-white'>
                                                 Sharp Valley
 
@@ -214,7 +214,7 @@ export default function MainLayout({ children }) {
                                         <div className="flex flex-1 items-center lg:hidden">
                                             <button
                                                 type="button"
-                                                className="-ml-2 rounded-md bg-yellow-700 p-2 text-sharp"
+                                                className="-ml-2 rounded-md bg-gold p-2 text-sharp"
                                                 onClick={() => setMobileMenuOpen(true)}
                                             >
                                                 <span className="sr-only">Open menu</span>
