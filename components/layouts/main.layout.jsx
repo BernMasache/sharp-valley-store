@@ -11,6 +11,8 @@ const navigation = {
         { name: 'Home', href: '/home' },
         { name: 'Partners', href: '/partners' },
         { name: 'Project Management', href: '/projects' },
+        { name: 'Travel', href: '/home' },
+        { name: 'Technology Solutions', href: '/' },
         { name: 'Procurement', href: '/quality-used-equipment' },
         { name: 'About Us', href: '/about' },
         { name: 'Contact Us', href: '/contact-us' },
@@ -24,6 +26,8 @@ const navigation = {
                 { name: 'Home', href: '/home' },
                 { name: 'Partners', href: '/partners' },
                 { name: 'Project Management', href: '/projects' },
+                { name: 'Travel', href: '/home' },
+                { name: 'Technology Solutions', href: '/' },
                 { name: 'Procurement', href: '/quality-used-equipment' },
                 { name: 'About Us', href: '/about' },
                 { name: 'Contact Us', href: '/contact-us' },
@@ -332,7 +336,7 @@ export default function MainLayout({ children }) {
             <main className={styles.main}>
                 {children}
             </main>
-            <FooterComponent/>
+            <FooterComponent />
 
         </div>
     )
