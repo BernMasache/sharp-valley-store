@@ -136,7 +136,7 @@ export default function Projects() {
                                 <Tab.Panel key={tab.name} className="space-y-16 pt-10 lg:pt-16">
                                     {tab.features.map((feature) => (
                                         <div key={feature.name} className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8">
-                                            <div className="mt-6 lg:col-span-6 lg:mt-0">
+                                            <div className="mt-6 lg:col-span-12 lg:mt-0">
                                                 <ProjectTemplate
                                                     name={tab.name}
                                                     description={feature.description}
@@ -146,8 +146,8 @@ export default function Projects() {
                                                     relatedMaterial={feature.imageSrc}
                                                 />
                                             </div>
-                                            <div className="lg:col-span-6">
-                                                <div className="aspect-w-5 aspect-h-5 overflow-hidden rounded-lg bg-gray-100 sm:aspect-w-5 sm:aspect-h-5">
+                                            <div className="lg:col-span-12 mt-6">
+                                                <div className="aspect-w-5 aspect-h-5 overflow-hidden rounded-lg sm:aspect-w-5 sm:aspect-h-5">
                                                     <img src={feature.imageSrc} alt={feature.imageAlt} className="object-fill object-center" />
                                                 </div>
 
