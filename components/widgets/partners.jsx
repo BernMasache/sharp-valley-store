@@ -14,7 +14,7 @@ const partners = [
     },
     {
         id: 2,
-        name: "Embassy of Malawi",
+        name: "Embassy of Malawi and Malawi Permanent Missions of the Republic of Malawi to the UN",
         logo: "./partners/417089ada9d00222e1ab37a5a66f035f.jpeg",
         description: "Replacing the VRF (Variable Refrigerant Flow) Systems for a four-story building in Washington, DC. We was Provided Mold Remediation and Environmental Cleanup services in multi-story building in Washington DC"
     },
@@ -29,14 +29,8 @@ const partners = [
         name: "GHT Consulting Limited",
         logo: "./partners/GHT-Limited_Raster_2C.jpg",
         description: "We consistently discover new solutions in architectural engineering by applying creative thinking to proven design strategies, with a focus on practical results. GHT’s informed approach will help you develop, design, build, and operate successful buildings."
-    },
-    {
-        id: 5,
-        name: "Malawi Permanent Missions of the Republic of Malawi to the UN",
-        logo: "./partners/417089ada9d00222e1ab37a5a66f035f.jpeg",
-        description: ""
     }
-  
+
 
 ]
 
@@ -45,13 +39,13 @@ export default function Example() {
         Swal.fire({
             position: 'top',
             toast: true,
-            titleText: partners[e.target.id-1].name,
+            titleText: partners[e.target.id - 1].name,
             showCancelButton: false,
             showConfirmButton: true,
             color: '#2f2709',
             width: 600,
-            timer:30000,
-            html: partners[e.target.id-1].description,
+            timer: 30000,
+            html: partners[e.target.id - 1].description,
             buttonsStyling: false,
             customClass: {
                 container: 'text-xs text-danger-200',
@@ -101,7 +95,7 @@ export default function Example() {
                     Products
                 </h2>
 
-                <div className="-mx-px grid grid-cols-1 border-l border-gray-200 sm:mx-0 md:grid-cols-2 lg:grid-cols-5">
+                <div className="-mx-px grid grid-cols-1 border-l border-gray-200 sm:mx-0 md:grid-cols-2 lg:grid-cols-4">
                     {partners.map((partner, key) => (
                         <div key={key} id={key} onClick={partnerDetails} className="group p-2 relative border-r border-b border-gray-200 cursor-pointer">
                             <div id={partner.id} className="aspect-w-1 aspect-h-1 overflow-hidden bg-gray-200 group-hover:opacity-75">
@@ -109,7 +103,7 @@ export default function Example() {
                                     id={partner.id}
                                     src={partner.logo}
                                     alt={partner.imageAlt}
-                                    className="h-full w-full object-cover object-center"
+                                    className="h-full w-full object-fit object-center"
                                 />
                             </div>
 
