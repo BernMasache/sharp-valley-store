@@ -10,13 +10,13 @@ const partners = [
         id: 1,
         name: "Dixie Cullen Interests Inc.",
         logo: "./partners/dixie-cullen-logo-400px.jpg",
-        description: "Negotiated and implemented long term and secure storage for equipment valued at over $100m"
+        description: "Negotiated and implemented long term and secure storage for equipment valued at over $100m."
     },
     {
         id: 2,
-        name: "Embassy of Malawi and Malawi Permanent Missions of the Republic of Malawi to the UN",
+        name: "Embassy of Malawi and Malawi Permanent Missions of the Republic of Malawi to the UN.",
         logo: "./partners/417089ada9d00222e1ab37a5a66f035f.jpeg",
-        description: "Replacing the VRF (Variable Refrigerant Flow) Systems for a four-story building in Washington, DC. We was Provided Mold Remediation and Environmental Cleanup services in multi-story building in Washington DC"
+        description: "Replacing the VRF (Variable Refrigerant Flow) Systems for a four-story building in Washington, DC. We was Provided Mold Remediation and Environmental Cleanup services in multi-story building in Washington DC."
     },
     {
         id: 3,
@@ -26,7 +26,7 @@ const partners = [
     },
     {
         id: 4,
-        name: "GHT Consulting Limited",
+        name: "GHT Consulting Limited.",
         logo: "./partners/GHT-Limited_Raster_2C.jpg",
         description: "We consistently discover new solutions in architectural engineering by applying creative thinking to proven design strategies, with a focus on practical results. GHT’s informed approach will help you develop, design, build, and operate successful buildings."
     }
