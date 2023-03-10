@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Fragment, useEffect, useRef, useState } from 'react'
 import Swal from 'sweetalert2';
 const navigation = {
@@ -107,7 +108,7 @@ export default function FooterComponent() {
       </h2>
       <div className="mx-auto max-w-7xl py-12 px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="grid grid-cols-2 gap-8 xl:col-span-2">
+          <div className="grid grid-cols-1 gap-8 xl:col-span-1">
             <div className="md:grid md:grid-cols-1 md:gap-8">
               <div>
                 <h3 className="text-base font-medium text-white">Contacts</h3>
@@ -127,21 +128,57 @@ export default function FooterComponent() {
           </div>
           <div className="mt-8 xl:mt-0">
             <h3 className="text-base font-medium text-white">Quick Links</h3>
-            <p className="mt-4 text-base text-gray-300">
-              Home
-            </p>
-            <p className="mt-4 text-base text-gray-300">
-              Projects
-            </p>
-            
-            <div className="mt-2 p-2">
-              {state === 'Error' && (
-                <span className="error-state">{errorMsg}</span>
-              )}
-              {state === 'Success' && (
-                <span className='text-white'>Awesome, you subscribed!</span>
-              )}
-            </div>
+
+            <ul role="list" className="mt-4 space-y-4">
+              {[
+                {
+                  name: "Home",
+                  href: "/home",
+                },
+                {
+                  name: "Partners",
+                  href: "/partners",
+                },
+                {
+                  name: "About us",
+                  href: "/about-us",
+                }
+              ].map((item, key) => (
+                <li key={key} className="cursor-pointer">
+                  <Link href={item.href} className="text-base text-gray-300 hover:text-white ">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="mt-8 xl:mt-0">
+            <h3 className="text-base font-medium text-white">Quick Links</h3>
+
+            <ul role="list" className="mt-4 space-y-4">
+              {[
+
+                {
+                  name: "Contact us",
+                  href: "/contact-us",
+                },
+                {
+                  name: "Travel",
+                  href: "/travel",
+                },
+                {
+                  name: "Technology solutions",
+                  href: "/technology-solutions",
+                }
+              ].map((item, key) => (
+                <li key={key} className="cursor-pointer">
+                  <Link href={item.href} className="text-base text-gray-300 hover:text-white ">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
         <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
