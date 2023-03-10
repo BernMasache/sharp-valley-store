@@ -1,60 +1,21 @@
-
+import React from "react"
+import Router from "next/router"
 import Swal from "sweetalert2"
-
+import Cookies from "js-cookie"
+import Link from "next/link"
+import useCrypto from "../../services/encrypt/crypto"
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-const partners = [
-    {
-        id: 1,
-        name: "Dixie Cullen Interests Inc.",
-        logo: "./partners/dixie-cullen-logo-400px.jpg",
-        description: "Negotiated and implemented long term and secure storage for equipment valued at over $100m."
-    },
-    {
-        id: 2,
-        name: "Embassy of Malawi and Malawi Permanent Missions of the Republic of Malawi to the UN.",
-        logo: "./partners/417089ada9d00222e1ab37a5a66f035f.jpeg",
-        description: "Replacing the VRF (Variable Refrigerant Flow) Systems for a four-story building in Washington, DC. We was Provided Mold Remediation and Environmental Cleanup services in multi-story building in Washington DC."
-    },
-    {
-        id: 3,
-        name: "Hoffman Sheet Metals",
-        logo: "./partners/index.jpeg",
-        description: "Hoffman Sheet Metal Inc is a family owned and operated business in Southern Maryland; and has been proudly serving the MD/DC/VA area since 1987.  Offering a range of services for residential and light commercial customers including but not limited to; heating, A/C, sheet metal fabrication, air quality, maintenance contracts and free estimates."
-    },
-    {
-        id: 4,
-        name: "GHT Consulting Limited.",
-        logo: "./partners/GHT-Limited_Raster_2C.jpg",
-        description: "We consistently discover new solutions in architectural engineering by applying creative thinking to proven design strategies, with a focus on practical results. GHT’s informed approach will help you develop, design, build, and operate successful buildings."
+const crypto = new useCrypto()
+export default function Partners(props) {
+
+    const textReplace = (text) => {
+        const newText = text.replace("/", 'sharp');
+        return newText
     }
 
-
-]
-
-export default function Example() {
-    const partnerDetails = (e) => {
-        Swal.fire({
-            position: 'top',
-            toast: true,
-            titleText: partners[e.target.id - 1].name,
-            showCancelButton: false,
-            showConfirmButton: true,
-            color: '#2f2709',
-            width: 600,
-            timer: 30000,
-            html: partners[e.target.id - 1].description,
-            buttonsStyling: false,
-            customClass: {
-                container: 'text-xs text-danger-200',
-                actions: 'space-x-2',
-                confirmButton: 'capitalize inline-flex items-center font-semibold bg-white px-3 py-2 text-sm font-medium leading-4 text-sharp  rounded-sm focus:outline-none hover:bg-gray-200 focus:ring-2 focus:ring-danger-500 focus:ring-offset-2',
-                cancelButton: ' capitalize inline-flex items-center font-semibold bg-white px-3 py-2 text-sm font-medium leading-4 text-danger-700  rounded-sm focus:outline-none hover:bg-danger-100 focus:ring-2 focus:ring-danger-500 focus:ring-offset-2'
-            }
-        })
-    }
     return (
         <div className="relative isolate bg-white pt-24 pb-48 sm:pt-24">
             <div className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl">
@@ -96,8 +57,17 @@ export default function Example() {
                 </h2>
 
                 <div className="-mx-px grid grid-cols-1 border-l border-gray-200 sm:mx-0 md:grid-cols-2 lg:grid-cols-4">
-                    {partners.map((partner, key) => (
-                        <div key={key} id={key} onClick={partnerDetails} className="group p-2 relative border-r border-b border-gray-200 cursor-pointer">
+                    {props && props.partners == undefined ? "" : props.partners.map((partner, key) => (
+                        <Link
+                            href={{
+                                pathname: `/partners/partner/id=${crypto.encrypt(partner.id)}`,
+                                query: {
+                                    data: crypto.encrypt(partner)
+                                },
+                            }}
+                            // as={`/partners/partner/${crypto.encrypt(partner)}`}
+
+                            key={key} id={key} className="group p-2 relative border-r border-b border-gray-200 cursor-pointer">
                             <div id={partner.id} className="aspect-w-1 aspect-h-1 overflow-hidden bg-gray-200 group-hover:opacity-75">
                                 <img
                                     id={partner.id}
@@ -107,7 +77,7 @@ export default function Example() {
                                 />
                             </div>
 
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </section>
