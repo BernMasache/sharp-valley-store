@@ -8,6 +8,7 @@ import Swal from 'sweetalert2'
 import VideoPage from './widgets/videoPage'
 import MenAtWork from './widgets/menAtWork'
 import Testimonials from './widgets/testimonials'
+import Services from './widgets/services'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -91,10 +92,11 @@ export default function HomeComponent() {
 
   return (
     <div className={styles.main}>
-      <VideoPage/>
+      <VideoPage />
       <main >
-        <MenAtWork/>
-        <Testimonials/>
+        <Services />
+        <MenAtWork />
+        <Testimonials />
       </main>
     </div>
   )

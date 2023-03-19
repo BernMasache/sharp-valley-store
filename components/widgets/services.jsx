@@ -1,39 +1,51 @@
 import HeaderPage from "./header"
 
-const incentives = [
+const services = [
     {
-      name: 'Free shipping',
+      name: 'Procurements solutions',
       imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg',
-      description: "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
+      description: "Procurements description",
     },
     {
-      name: '10-year warranty',
+      name: 'Project Management',
       imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
-      description: "If it breaks in the first 10 years we'll replace it. After that you're on your own though.",
+      description: "Projects description",
     },
     {
-      name: 'Exchanges',
-      imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
+      name: 'Logistics and advisory services ', 
+      imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg',
       description:
-        "If you don't like it, trade it to one of your friends for something of theirs. Don't send it here though.",
+        "Sample description for logistics and advisory services",
     },
+    {
+        name: 'eCommerce',
+        imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
+        description:
+          "description",
+      },
+    {
+        name: 'Technology Solutions',
+        imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
+        description:
+          "description",
+      },
   ]
   
-  export default function TechnologySolutions() {
+  export default function Services() {
     return (
       <div className="bg-gray-50">
-        <div className="mx-auto h-[100vh] max-w-7xl py-8 sm:px-2 sm:py-8 lg:px-4">
-          <HeaderPage page={"Technology Solutions"}/>
-          <div className="sr-only  mx-auto max-w-2xl px-4 lg:max-w-none">
+        <div className="mx-auto max-w-7xl py-8 sm:px-2 sm:py-8 lg:px-4">
+          
+          <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
             <div className="grid grid-cols-1 items-center gap-y-10 gap-x-16 lg:grid-cols-2">
               <div>
                 <h2 className="text-4xl font-bold tracking-tight text-gray-900">
-                  We built our business on great customer service
+                  Our Services
                 </h2>
                 <p className="mt-4 text-gray-500">
-                  At the beginning at least, but then we realized we could make a lot more money if we kinda stopped
-                  caring about that. Our new strategy is to write a bunch of things that look really good in the
-                  headlines, then clarify in the small print but hope people  actually read it.
+                We are a dedicated entity that offers various services to our best of effort to all sectors.
+                Sharp Valley has been established as the leading service provider.
+                 Sharp Valley is now serving clients with extensive diversity, both by regional footprint and industry.
                 </p>
               </div>
               <div className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg bg-gray-100">
@@ -44,8 +56,8 @@ const incentives = [
                 />
               </div>
             </div>
-            <div className="mt-16 grid grid-cols-1 gap-y-10 gap-x-8 lg:grid-cols-3">
-              {incentives.map((incentive) => (
+            <div className="mt-16 grid grid-cols-1 gap-y-10 gap-x-8 md:grid-cols-2 lg:grid-cols-4">
+              {services.map((incentive) => (
                 <div key={incentive.name} className="sm:flex lg:block">
                   <div className="sm:flex-shrink-0">
                     <img className="h-16 w-16" src={incentive.imageSrc} alt="" />

@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { useRouter } from "next/router";
 import useCrypto from "../../services/encrypt/crypto";
+import HeaderPage from "./header";
 
 const crypto = new useCrypto()
 
@@ -10,7 +11,8 @@ export default function Partner(props) {
 
     return (
         <div className="bg-gray-50">
-            <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
+            <div className="mx-auto max-w-7xl py-8 sm:px-2 sm:py-8 lg:px-4">
+                <HeaderPage page={"Partner"} />
                 <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
                     <div className="grid grid-cols-1 items-center gap-y-10 gap-x-16 lg:grid-cols-2">
                         <div>
@@ -25,7 +27,7 @@ export default function Partner(props) {
                                 router.query && router.query.data == undefined ? "" :
                                     <div className="mt-4 ">
 
-                                        <Link href={""} target={"_blank"} className="mt-4 text-white cursor-pointer bg-slate-500 rounded p-1 mr-4">
+                                        <Link href={"/partners"} className="mt-4 text-white cursor-pointer bg-slate-500 rounded p-1 mr-4">
                                             Partner&apos;s site
                                         </Link>
 

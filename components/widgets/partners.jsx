@@ -4,6 +4,7 @@ import Swal from "sweetalert2"
 import Cookies from "js-cookie"
 import Link from "next/link"
 import useCrypto from "../../services/encrypt/crypto"
+import HeaderPage from "./header"
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
@@ -17,7 +18,8 @@ export default function Partners(props) {
     }
 
     return (
-        <div className="relative isolate bg-white pt-24 pb-48 sm:pt-24">
+        <div className="relative isolate bg-white pt-8 pb-48 sm:pt-8">
+            <HeaderPage page={"Partners"}/>
             <div className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl">
                 <svg viewBox="0 0 1313 771" aria-hidden="true" className="ml-[max(50%,38rem)] w-[82.0625rem]">
                     <path
@@ -60,7 +62,7 @@ export default function Partners(props) {
                     {props && props.partners == undefined ? "" : props.partners.map((partner, key) => (
                         <Link
                             href={{
-                                pathname: `/partners/partner/id=${crypto.encrypt(partner.id)}`,
+                                pathname: `/partners/partner/${partner.id}`,
                                 query: {
                                     data: crypto.encrypt(partner)
                                 },

@@ -2,6 +2,7 @@
 import { Fragment } from 'react'
 import { Tab } from '@headlessui/react'
 import ProjectTemplate from '../layouts/projectTemplate'
+import HeaderPage from './header'
 
 const tabs = [
     {
@@ -67,7 +68,7 @@ export default function Projects() {
     return (
         <div className="bg-white">
             <div className="bg-white relative sm:pb-32 py-2 lg:py-2">
-
+                <HeaderPage page={"Projects"}/>
                 <div className="relative">
                     <div className="relative overflow-hidden bg-sky-300 py-24 px-8 shadow-2xl lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-16">
                         <div className="absolute inset-0">

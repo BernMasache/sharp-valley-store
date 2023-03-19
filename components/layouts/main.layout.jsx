@@ -10,11 +10,11 @@ const navigation = {
     mainNave: [
         { name: 'Home', href: '/home' },
         { name: 'Partners', href: '/partners' },
-        { name: 'Project Management', href: '/projects' },
+        { name: 'Projects', href: '/projects' },
         { name: 'Travel', href: '/travel' },
         { name: 'Technology Solutions', href: '/technology-solutions' },
         { name: 'Procurement', href: '/quality-used-equipment' },
-        { name: 'About Us', href: '/about' },
+        { name: 'About', href: '/about' },
         { name: 'Contact Us', href: '/contact-us' },
         { name: 'News', href: '/news' },
     ],
@@ -25,11 +25,11 @@ const navigation = {
             categories: [
                 { name: 'Home', href: '/home' },
                 { name: 'Partners', href: '/partners' },
-                { name: 'Project Management', href: '/projects' },
+                { name: 'Projects', href: '/projects' },
                 { name: 'Travel', href: '/travel' },
                 { name: 'Technology Solutions', href: '/technology-solutions' },
                 { name: 'Procurement', href: '/quality-used-equipment' },
-                { name: 'About Us', href: '/about' },
+                { name: 'About', href: '/about' },
                 { name: 'Contact Us', href: '/contact-us' },
                 { name: 'News', href: '/news' },
             ]

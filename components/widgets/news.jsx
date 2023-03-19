@@ -1,5 +1,6 @@
 import { NewspaperIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
+import HeaderPage from './header'
 
 const news = [
   {
@@ -47,6 +48,7 @@ export default function Example() {
     <div className="bg-white py-8 sm:py-16">
       <div className=" px-6 lg:px-8">
         <div className="mx-auto lg:max-w-9xl">
+          <HeaderPage page={"News sections"}/>
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">News Section</h2>
           <p className="sr-only mt-2 text-lg leading-8 text-gray-600">
             Learn how to grow your business with our expert advice.
