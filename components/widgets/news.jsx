@@ -45,15 +45,14 @@ const news = [
 
 export default function Example() {
   return (
-    <div className="bg-white py-8 sm:py-16">
-      <div className=" px-6 lg:px-8">
+    <div className="bg-white">
+          <HeaderPage page={"News"}/>
+      <div className="px-6 lg:px-8">
         <div className="mx-auto lg:max-w-9xl">
-          <HeaderPage page={"News sections"}/>
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">News Section</h2>
           <p className="sr-only mt-2 text-lg leading-8 text-gray-600">
-            Learn how to grow your business with our expert advice.
+            
           </p>
-          <div className=" mt-4 max-w-9xl grid grid-cols-1 md:grid-cols-2  sm:grid-cols-1">
+          <div className=" mt-4 max-w-7xl grid grid-cols-1 md:grid-cols-1  sm:grid-cols-1 gap-5">
             {news.map((post) => (
               <article key={post.id} className="relative p-4 mt-8 isolate flex flex-col gap-8 lg:flex-row">
                 <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">

@@ -9,6 +9,7 @@ import VideoPage from './widgets/videoPage'
 import MenAtWork from './widgets/menAtWork'
 import Testimonials from './widgets/testimonials'
 import Services from './widgets/services'
+import HeaderPage from './widgets/header'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -92,7 +93,8 @@ export default function HomeComponent() {
 
   return (
     <div className={styles.main}>
-      <VideoPage />
+      <HeaderPage page={"Home"} infor={"some information"} description={"Home page"}/>
+      {/* <VideoPage /> */}
       <main >
         <Services />
         <MenAtWork />

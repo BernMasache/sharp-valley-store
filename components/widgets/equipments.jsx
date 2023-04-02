@@ -6,6 +6,7 @@ import {
     ReceiptRefundIcon,
     UsersIcon,
 } from '@heroicons/react/24/outline'
+import HeaderPage from './header'
 
 const equipments = [
 
@@ -40,33 +41,7 @@ export default function EquipmentsUsed() {
     return (
         <div className="">
             <div className="bg-white">
-                <div className="bg-white relative sm:pb-32 py-2 lg:py-2">
-
-                    <div className="relative">
-                        <div className="relative overflow-hidden bg-sky-300 py-24 px-8 shadow-2xl lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-16">
-                            <div className="absolute inset-0">
-                                <img
-                                    src="./tools/finding-temporary-housing-while-building-a-home-1200x800.jpg"
-                                    alt=""
-                                    className="h-full w-full object-cover"
-                                />
-              <div className="absolute inset-0 bg-brown opacity-60 mix-blend-multiply" aria-hidden="true" />
-
-                            </div>
-                            <div className="relative lg:col-span-1">
-
-                                <h2 className="text-3xl text-gray-100 font-bold tracking-tight sm:text-4xl">Procurement</h2>
-                                <blockquote className="mt-6 text-white">
-                                   
-                                    <p className="text-xl text-white font-medium sm:text-xl">
-                                    Sharp Valley transforms your procurement efforts using necessary insights, sourcing expertise, and experience that translates to clients operational efficiencies and cost savings.
-                                    </p>
-                                </blockquote>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+               <HeaderPage page={"Procurement"}/>
                 <div className="mx-auto max-w-md sm:max-w-3xl sm:py-8 sm:px-6 lg:max-w-7xl lg:px-8">
                     <div className="divide-y divide-warm-gray-200">
 

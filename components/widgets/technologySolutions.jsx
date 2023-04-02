@@ -22,8 +22,8 @@ const incentives = [
   export default function TechnologySolutions() {
     return (
       <div className="bg-gray-50">
-        <div className="mx-auto h-[100vh] max-w-7xl py-8 sm:px-2 sm:py-8 lg:px-4">
           <HeaderPage page={"Technology Solutions"}/>
+        <div className="mx-auto h-[100vh] max-w-7xl py-8 sm:px-2 sm:py-8 lg:px-4">
           <div className="sr-only  mx-auto max-w-2xl px-4 lg:max-w-none">
             <div className="grid grid-cols-1 items-center gap-y-10 gap-x-16 lg:grid-cols-2">
               <div>
