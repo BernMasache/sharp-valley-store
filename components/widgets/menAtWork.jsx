@@ -8,22 +8,30 @@ const testimonials = [
         location: "DC Project"
     },
     // More testimonials...
-    {
-        title: ' Construction is the art of making a meaningful whole out of many parts. Buildings are witnesses to the human ability to construct concrete things.',
-        alt: "",
-        imageUrl: './images/IMG-20230222-WA0001.jpg',
-        location: "DC Project"
+    // {
+    //     title: ' Construction is the art of making a meaningful whole out of many parts. Buildings are witnesses to the human ability to construct concrete things.',
+    //     alt: "",
+    //     imageUrl: './images/IMG-20230222-WA0001.jpg',
+    //     location: "DC Project"
 
-    },
-    {
-        title: 'If a building looks better under construction than it does when finished, then it’s a failure.',
+    // },
+    // {
+    //     title: 'If a building looks better under construction than it does when finished, then it’s a failure.',
 
-        alt: "",
-        imageUrl: './images/IMG-20230222-WA0007.jpg',
-        location: "DC Project"
+    //     alt: "",
+    //     imageUrl: './images/IMG-20230222-WA0007.jpg',
+    //     location: "DC Project"
 
-    },
+    // },
     // More testimonials...
+    {
+        title: 'Comfortable place for your trip. Enjoy the view',
+
+        alt: "",
+        imageUrl: './assets/new/IMG-20230330-WA0006.jpg',
+        location: "Hotel room"
+
+    },
     {
         title: ' Construction is the art of making a meaningful whole out of many parts. Buildings are witnesses to the human ability to construct concrete things.',
 
@@ -32,6 +40,7 @@ const testimonials = [
         location: "DC Project"
 
     },
+    
 ]
 
 export default function MenAtWork() {
@@ -41,12 +50,12 @@ export default function MenAtWork() {
                 <div className="mx-auto max-w-xl text-center">
 
                     <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        Project Management
+                        Hotel and Construction
 
                     </p>
                 </div>
                 <div className="mx-auto mt-4 flow-root max-w-2xl sm:mt-4 lg:mx-0 lg:max-w-none">
-                    <div className="grid grid-cols-1 gap-y-10 gap-x-8 lg:grid-cols-4">
+                    <div className="grid grid-cols-1 gap-y-10 gap-x-8 lg:grid-cols-3">
 
                         {
                             testimonials.map((item, key) => {

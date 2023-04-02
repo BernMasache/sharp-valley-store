@@ -42,7 +42,7 @@ const timeline = [
     date: 'Sep 20',
     datetime: '2020-09-20',
     icon: CheckIcon,
-    iconBackground: 'bg-green-500',
+    iconBackground: 'bg-sharp',
   },
   {
     id: 2,
@@ -52,7 +52,7 @@ const timeline = [
     date: 'Sep 22',
     datetime: '2020-09-22',
     icon: CheckIcon,
-    iconBackground: 'bg-green-500',
+    iconBackground: 'bg-sharp',
   },
   {
     id: 3,
@@ -62,7 +62,7 @@ const timeline = [
     date: 'Sep 28',
     datetime: '2020-09-28',
     icon: CheckIcon,
-    iconBackground: 'bg-green-500',
+    iconBackground: 'bg-sharp',
   },
   {
     id: 4,
@@ -72,7 +72,7 @@ const timeline = [
     date: 'Sep 30',
     datetime: '2020-09-30',
     icon: CheckIcon,
-    iconBackground: 'bg-green-500',
+    iconBackground: 'bg-sharp',
   },
   {
     id: 5,
@@ -82,7 +82,7 @@ const timeline = [
     date: 'Oct 4',
     datetime: '2020-10-04',
     icon: CheckIcon,
-    iconBackground: 'bg-green-500',
+    iconBackground: 'bg-sharp',
   },
 ]
 function classNames(...classes) {

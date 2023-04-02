@@ -96,7 +96,7 @@ export default function HomeComponent() {
       <main >
         <Services />
         <MenAtWork />
-        <Testimonials />
+        {/* <Testimonials /> */}
       </main>
     </div>
   )
