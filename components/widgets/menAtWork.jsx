@@ -41,7 +41,7 @@ export default function MenAtWork() {
                 <div className="mx-auto max-w-xl text-center">
 
                     <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        Men at work
+                        Project Management
 
                     </p>
                 </div>
