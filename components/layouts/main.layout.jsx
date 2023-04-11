@@ -21,7 +21,7 @@ const navigation = {
 
     categories: [
         {
-            name: 'Sharp Valley',
+            name: 'Sharp Valley Holdings LLC',
             categories: [
                 { name: 'Home', href: '/home' },
                 { name: 'Partners', href: '/partners' },
@@ -117,7 +117,7 @@ export default function MainLayout({ children }) {
                                                                 <ul role="list" aria-labelledby="mobile-categories-heading" className="mt-6 space-y-6">
                                                                     {category.categories.map((item) => (
                                                                         <li key={item.name} className="flex">
-                                                                            <Link href={item.href} className="font-medium text-gray-50 hover:text-gray-700">
+                                                                            <Link href={item.href} className="font-medium text-gray-50 hover:text-gray-400">
                                                                                 {item.name}
                                                                             </Link>
                                                                         </li>
@@ -201,17 +201,17 @@ export default function MainLayout({ children }) {
                         {/* Secondary navigation */}
                         <div className="bg-sharp">
                             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                                <div className="border-b border-gray-200">
+                                <div className="border-b border-gray-200 p-4">
                                     <div className="flex h-16 items-center justify-between">
                                         {/* Logo (lg+) */}
                                         <div className="hidden lg:flex lg:items-center">
-                                            <Link href="/home">
-                                                <span className="sr-only">Sharpvalley</span>
+                                            <Link href="/home" className='flex w-full gap-4 p-2'>
                                                 <img
-                                                    className="h-8 w-auto sm:h-10"
-                                                    src="./assets/images/sharpvalley.com_files/Sharp-Valley-1-e1550352772192-300x70.png"
+                                                    className="h-16 w-16 sm:h-16"
+                                                    src="./logo.png"
                                                     alt=""
                                                 />
+                                                <span className="text-white text-2xl">Sharp Valley Holdings</span>
                                             </Link>
                                         </div>
                                         {/* Mobile menu and search (lg-) */}
@@ -228,18 +228,22 @@ export default function MainLayout({ children }) {
                                         </div>
 
                                         {/* Logo (lg-) */}
-                                        <Link href="/home" className="lg:hidden">
-                                            <span className="sr-only">Sharp Valley</span>
-                                            <img
-                                                src="./assets/images/cropped-Sharp-Valley-2.png"
-                                                alt=""
-                                                className="h-8 w-auto"
-                                            />
-                                        </Link>
+                                        <div className="">
+
+                                            <Link href="/home" className="lg:hidden flex w-full gap-4 p-2">
+                                                <img
+                                                    src="./logo.png"
+                                                    alt=""
+                                                    className="h-12 w-auto"
+                                                />
+                                                <span className="text-white sr-only">Sharp Valley Holdings LLC</span>
+                                            </Link>
+                                        </div>
 
                                         <div className="flex flex-1 items-center justify-end">
                                             <div className="flex items-center lg:ml-8">
 
+                                            <span className="text-white sr-only">Sharp Valley Holdings LLC</span>
 
                                             </div>
                                         </div>
@@ -256,7 +260,7 @@ export default function MainLayout({ children }) {
                                                                     className={classNames(
                                                                         open
                                                                             ? 'border-indigo-600 text-indigo-600 flex'
-                                                                            : 'border-transparent text-gray-50 hover:text-gray-200',
+                                                                            : 'border-transparent text-gray-50 hover:text-gray-400',
                                                                         'relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out'
                                                                     )}
                                                                 >

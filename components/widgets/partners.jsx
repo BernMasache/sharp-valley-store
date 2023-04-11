@@ -17,7 +17,7 @@ export default function Partners(props) {
         const newText = text.replace("/", 'sharp');
         return newText
     }
-    const isEvent = (number) => {
+    const isEven = (number) => {
         let value = false
         if (number % 2 == 0) {
             value = true
@@ -76,7 +76,7 @@ export default function Partners(props) {
                             <div className="" key={key}>
                                 {/* <div aria-hidden="true" className="hidden h-full w-full lg:block mx-auto max-w-7xl " /> */}
                                 {
-                                    isEvent(key) == true ? <div className="px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
+                                    isEven(key) == true ? <div className="px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
 
                                         <div className="">
                                             <img
