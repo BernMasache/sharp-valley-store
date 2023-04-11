@@ -10,7 +10,7 @@ const navigation = {
     mainNave: [
         { name: 'Home', href: '/home' },
         { name: 'Partners', href: '/partners' },
-        { name: 'Projects', href: '/projects' },
+        { name: 'Project management', href: '/projects' },
         { name: 'Travel', href: '/travel' },
         { name: 'Technology Solutions', href: '/technology-solutions' },
         { name: 'Procurement', href: '/quality-used-equipment' },
@@ -25,7 +25,7 @@ const navigation = {
             categories: [
                 { name: 'Home', href: '/home' },
                 { name: 'Partners', href: '/partners' },
-                { name: 'Projects', href: '/projects' },
+                { name: 'Project management', href: '/projects' },
                 { name: 'Travel', href: '/travel' },
                 { name: 'Technology Solutions', href: '/technology-solutions' },
                 { name: 'Procurement', href: '/quality-used-equipment' },

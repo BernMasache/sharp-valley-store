@@ -66,24 +66,14 @@ const timeline = [
   },
   {
     id: 4,
-    content: 'Luxury rentals',
+    content: 'Technology solutions',
     target: 'Bethany Blake',
     href: '#',
     date: 'Sep 30',
     datetime: '2020-09-30',
     icon: CheckIcon,
     iconBackground: 'bg-sharp',
-  },
-  {
-    id: 5,
-    content: 'Security detail',
-    target: 'Katherine Snyder',
-    href: '#',
-    date: 'Oct 4',
-    datetime: '2020-10-04',
-    icon: CheckIcon,
-    iconBackground: 'bg-sharp',
-  },
+  }
 ]
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
