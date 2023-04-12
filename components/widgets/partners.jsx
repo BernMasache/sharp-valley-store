@@ -28,7 +28,7 @@ export default function Partners(props) {
         return value
     }
     return (
-        <div className="relative isolate bg-white ">
+        <div className="relative isolate bg-white">
             <HeaderPage page={"Partners"} />
 
             <div className="pt-8 pb-48 sm:pt-8">

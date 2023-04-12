@@ -1,6 +1,6 @@
 export default function HeaderPage(props) {
     return (
-        <div className="">
+        <div className="py-12 sm:py-12">
               {/* <div className="bg-white relative sm:pb-32 py-2 lg:py-2">
                 <div className="relative"> */}
                     <div className="relative isolate overflow-hidden bg-sky-300 py-24 px-8 shadow-2xl lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-16">
