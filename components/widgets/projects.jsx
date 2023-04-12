@@ -68,8 +68,8 @@ export default function Projects() {
     return (
         <div className="bg-white">
             <div className="bg-white relative sm:pb-32 py-2 lg:py-2">
-                <HeaderPage page={"Projects"}/>
-               
+                <HeaderPage page={"Projects"} />
+
             </div>
 
             <section aria-labelledby="features-heading" className="mx-auto max-w-7xl py-32 sm:px-2 lg:px-8">
@@ -79,8 +79,12 @@ export default function Projects() {
                             Our Projects.
                         </h2>
                         <p className="mt-4 text-gray-500">
-                            The Organize modular system offers endless options for arranging your favorite and most used items. Keep
-                            everything at reach and in its place, while dressing up your workspace.
+                            Sharp Valley is the leading provider of Project management services. We use the tools and skills needed to
+                            deliver better project outcomes and lead the gold standard in the industry.
+                        </p>
+                        <p className="mt-4 text-gray-500">
+                            At Sharp Valley, we combine leading-edge methodologies, analytics, market intelligence, and industry
+                            benchmarks to reduce costs, transform customer operations, and provide on-time delivery.
                         </p>
                     </div>
 

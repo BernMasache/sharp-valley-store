@@ -95,18 +95,18 @@ export default function Services() {
                 Corporations.
               </p>
 
-<p className="mt-4 text-gray-500">
-With our eight years of experience managing large projects, procurement, and providing
-accommodation to delegates at large conferences, Sharp Valley has helped many of our clients and
-partners navigate their difficult and challenging projects especially experienced in the last few years
-under the global pandemic conditions. Our staff has a combined 35 years of experience managing
-projects of strategic significance for our clients.
-</p>
-<p className="mt-4 text-gray-500">
-Sharp Valley is now serving clients with extensive diversity, both by regional footprint and industry. Our
-clients span healthcare, pharmaceuticals, military, government, oil and gas, and food and beverage
-industries in North America, Asia, Africa, Europe, and the Middle East.
-</p>
+              <p className="mt-4 text-gray-500">
+                With our eight years of experience managing large projects, procurement, and providing
+                accommodation to delegates at large conferences, Sharp Valley has helped many of our clients and
+                partners navigate their difficult and challenging projects especially experienced in the last few years
+                under the global pandemic conditions. Our staff has a combined 35 years of experience managing
+                projects of strategic significance for our clients.
+              </p>
+              <p className="mt-4 text-gray-500">
+                Sharp Valley is now serving clients with extensive diversity, both by regional footprint and industry. Our
+                clients span healthcare, pharmaceuticals, military, government, oil and gas, and food and beverage
+                industries in North America, Asia, Africa, Europe, and the Middle East.
+              </p>
               <div className="mt-4 flow-root">
                 <ul role="list" className=" -mb-8">
                   {timeline.map((event, eventIdx) => (
