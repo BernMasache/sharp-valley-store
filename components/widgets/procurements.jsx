@@ -109,7 +109,7 @@ export default function Procurements() {
                         <div>
                             <h2 className="text-3xl font-bold tracking-tight text-gray-900">Sharp Valley Capabilities</h2>
                             <div className="mt-4 flow-root ml-16">
-                                <ul role="list" className=" -mb-8 grid grid-cols-1 md:grid-cols-3 grid-cols-3 ">
+                                <ul role="list" className="flex w-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 ">
                                     {capabilities.map((event, eventIdx) => (
                                         <li key={event.id}>
                                             <div className="relative pb-8">
