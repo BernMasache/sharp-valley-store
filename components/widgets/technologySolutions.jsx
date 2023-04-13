@@ -21,42 +21,21 @@ const incentives = [
 
 export default function TechnologySolutions() {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 h-[100vh]">
       <HeaderPage page={"Technology Solutions"} />
-      <div className="mx-auto h-[100vh] max-w-7xl py-8 sm:px-2 sm:py-8 lg:px-4">
-        <div className="sr-only  mx-auto max-w-2xl px-4 lg:max-w-none">
-          <div className="grid grid-cols-1 items-center gap-y-10 gap-x-16 lg:grid-cols-2">
-            <div>
-              <h2 className="text-4xl font-bold tracking-tight text-gray-900">
-                We built our business on great customer service
-              </h2>
-              <p className="mt-4 text-gray-500">
-                Sharp Valley provides a comprehensive suite of consulting services to support our clients’ diverse
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-1">
+            <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-2 md:grid-cols-2">
+              {/* <h2 className="text-3xl font-bold tracking-tight text-gray-900 sr-only"></h2> */}
+              <p className="mt-4 leading-7 text-gray-600">
+                Sharp Valley provides a comprehensive suite of consulting services to support our clients&apos; diverse
                 implementation needs, including project management and process optimization. Sharp Valley also provides
                 church management software, school management software, and accounting software.
               </p>
             </div>
-            <div className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg bg-gray-100">
-              <img
-                src="https://tailwindui.com/img/ecommerce-images/incentives-07-hero.jpg"
-                alt=""
-                className="object-cover object-center"
-              />
-            </div>
           </div>
-          <div className="mt-16 grid grid-cols-1 gap-y-10 gap-x-8 lg:grid-cols-3">
-            {incentives.map((incentive) => (
-              <div key={incentive.name} className="sm:flex lg:block">
-                <div className="sm:flex-shrink-0">
-                  <img className="h-16 w-16" src={incentive.imageSrc} alt="" />
-                </div>
-                <div className="mt-4 sm:mt-0 sm:ml-6 lg:mt-6 lg:ml-0">
-                  <h3 className="text-sm font-medium text-gray-900">{incentive.name}</h3>
-                  <p className="mt-2 text-sm text-gray-500">{incentive.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+
         </div>
       </div>
     </div>
