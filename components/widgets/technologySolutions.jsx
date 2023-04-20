@@ -35,7 +35,6 @@ export default function TechnologySolutions() {
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </div>
